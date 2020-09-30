@@ -120,12 +120,13 @@
             Swal.fire({
                 text: "selamat! semua jawabanmu benar",
                 icon: 'success',
-                confirmButtonText: 'Simpan',
-            }).then((result) => {
-                if (result.value) {
-                    $('#latihan').submit();
-                }
+                confirmButtonText: '<a href="<?= base_url($redirect)?>">Selesai</a>',
             })
+            // .then((result) => {
+            //     if (result.value) {
+            //         $('#latihan').submit();
+            //     }
+            // })
         }
     })
 

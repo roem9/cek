@@ -40,7 +40,7 @@
                     <a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i>Mufrodat</a>
                     </div>
                 <div class="col-12 mb-3">
-                    <img src="<?= base_url()?>assets/img/ft_1/1.png" class="img-rounded img-fluid" alt="Cinque Terre">
+                    <img src="<?= base_url()?>assets/img/ft_1/<?= str_replace("Mufrodat ", "", $materi)?>.png" class="img-rounded img-fluid" alt="Cinque Terre">
                 </div>
                 <?php if(COUNT($mufrodat) != 0):?>
                     <div class="col-12">
