@@ -416,7 +416,8 @@ class Ft_1 extends CI_CONTROLLER{
                 }
             }
 
-            $kemajuan = $presentasi / COUNT($data['tema']);
+            // $kemajuan = $presentasi / COUNT($data['tema']);
+            $kemajuan = 0;
 
             return $kemajuan;
         }

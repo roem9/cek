@@ -23,6 +23,9 @@
                                     </li>
                                 </div>
                             <?php endforeach;?>
+                            <li class="list-group-item">
+                                <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i><span class="message"></span></div>
+                            </li>
                             <li class="list-group-item"><input type="submit" class="btn btn-sm btn-block btn-success" value="Mulai!"></li>
                         </ul>
                     </form>
@@ -40,7 +43,7 @@
                     <a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i>Mufrodat</a>
                     </div>
                 <div class="col-12 mb-3">
-                    <img src="<?= base_url()?>assets/img/ft_1/<?= str_replace("Mufrodat ", "", $materi)?>.png" class="img-rounded img-fluid" alt="Cinque Terre">
+                    <img src="<?= base_url()?>assets/img/ft_1/<?= str_replace("Mufrodat ", "", $materi)?>.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
                 </div>
                 <?php if(COUNT($mufrodat) != 0):?>
                     <div class="col-12">
@@ -85,9 +88,16 @@
     $(".btn-latihan").click(function(){
         let data = $(this).data("id");
         data = data.split("|")
-        console.log(data)
         let judul = data[0];
         let link = data[1];
+
+        if(judul == "Latihan 1"){
+            $(".message").html("Latihan menerjemahkan bahasa Indonesia Ke bahasa Arab")
+        } else if (judul == "Latihan 2"){
+            $(".message").html("Latihan menerjemahkan bahasa Arab Ke bahasa Indonesia")
+        } else {
+            $(".message").html("Latihan menerjemahkan bahasa Indonesia Ke bahasa Arab dengan mengetik")
+        }
 
         $("#daftarIsiTitle").html(judul);
         $("#btn-mulai").attr("action", link)
