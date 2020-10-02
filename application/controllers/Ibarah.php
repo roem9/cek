@@ -59,19 +59,25 @@ class Ibarah extends CI_CONTROLLER{
             $this->load->view("templates/footer-user", $data);
 
         } elseif(!empty($_GET['latihan'])) {
-            $urut = $_GET['i'];
-            foreach ($kalimat as $i => $kalimat) {
-                if(MD5($kalimat['tema']) == $_GET['latihan']){
-                    if($urut == 1){
-                        if($kalimat['status'] == "on"){
-                            // $data['kalimat'][$i] = $kalimat['kalimat_arab'];
+            if($_POST['data']){
+                $urut = $_GET['i'];
+                foreach ($kalimat as $i => $kalimat) {
+                    if(in_array($kalimat['id'], $_POST['data'])){
+                        if($urut == 1){
+                            if($kalimat['status'] == "on"){
+                                $data['mufrodat'][$i] = $kalimat;
+                            }
+                        } else {
                             $data['mufrodat'][$i] = $kalimat;
                         }
-                    } else {
-                        $data['mufrodat'][$i] = $kalimat;
                     }
                 }
+            } else {
+                redirect("ibarah/awwal");
             }
+
+            // var_dump($tema);
+            // exit();
 
             foreach ($tema as $materi) {
                 if(MD5($materi['id']) == $_GET['latihan']){
@@ -79,7 +85,7 @@ class Ibarah extends CI_CONTROLLER{
                 }
             }
             
-            $data['materi'] = $tema['tema'];
+            $data['materi'] = $tema['tema_in'];
             $data['tema'] = "Level 1";
             $data['table'] = "latihan_ft_1";
             $data['redirect'] = "ibarah/awwal?id=".MD5($tema['id']);

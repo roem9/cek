@@ -48,7 +48,7 @@
                                                     shuffle($kata);
 
                                                     foreach ($kata as $cek) {
-                                                        if($cek != $kalimat['kata_arab'] && $r <= 3){
+                                                        if($cek != $kalimat['arti'] && $r <= 3){
                                                             $choice[$r] = $cek;
                                                             $r++;
                                                         }

@@ -31,12 +31,12 @@
                 <?php 
                     foreach ($tema as $tema) :?>
                         <div class="col-12 col-md-4 mb-3">
-                            <div class="card rounded-lg <?= $tema['kemajuan'] != "100" ? "border-danger" : "border-primary";?>">
-                                <div class="card-header d-flex justify-content-center <?= $tema['kemajuan'] != "100" ? "list-group-item-danger" : "list-group-item-primary";?>">
+                            <div class="card rounded-lg border-primary">
+                                <div class="card-header d-flex justify-content-center list-group-item-primary">
                                     <span class="text-dark arab"><?= $tema['tema']?><span>
                                 </div>
                                 <div class="card-body">
-                                    <a href="<?= base_url()?>ibarah/awwal?id=<?= MD5($tema['id'])?>" class="d-flex justify-content-center btn btn-block btn-sm <?= $tema['kemajuan'] != "100" ? "btn-danger" : "btn-primary";?> btnDaftarIsi"><span><?= $tema['tema_in']?></span></a>
+                                    <a href="<?= base_url()?>ibarah/awwal?id=<?= MD5($tema['id'])?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary btnDaftarIsi"><span><?= $tema['tema_in']?></span></a>
                                 </div>
                             </div>
                         </div>
