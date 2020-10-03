@@ -10,6 +10,10 @@
                 <div class="col-12 mb-2">
                     <a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i>Qowaid</a>
                 </div>
+                <div class="col-12 mb-3">
+                    <img src="<?= base_url()?>assets/img/qowaid_ft1/1.1.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
+                    <img src="<?= base_url()?>assets/img/qowaid_ft1/1.2.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
+                </div>
                 <!-- <div class="col-12">
                     <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Bahasa Arab memiliki pengelompokan Isim (Kata Benda) berdasarkan jenis, apakah untuk laki-laki (<strong>مُذَكَّرٌ</strong>) atau perempuan (<strong>مُؤَنَّثٌ</strong>)</div>
                 </div>
