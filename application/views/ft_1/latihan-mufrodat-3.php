@@ -43,6 +43,11 @@
                                             <div class="container">
                                                 <div class="row justify-content-center">
                                                     <?php 
+                                                        if(in_array("ج", $kalimat['huruf']) && in_array("_", $kalimat['huruf'])){
+                                                            $kalimat['huruf'] = array_diff($kalimat['huruf'], array('ج', '_'));
+                                                            $kalimat['huruf'][] = " ج ";
+                                                        }
+
                                                         rsort($kalimat['huruf']);
                                                         foreach ($kalimat['huruf'] as $k => $data) :?>
                                                             <div class="radio-toolbar mr-2">
@@ -171,6 +176,8 @@
         
         if (answer.charAt(answer.length-4)+answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "اَلْ") {
             hapus = answer.slice(0,-4);
+        } else if(answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == " ج "){
+            hapus = answer.slice(0,-3);
         } else if (answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "اَل" || answer.charAt(answer.length-3)+answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "الْ" ){
             hapus = answer.slice(0,-3);
         } else if (answer.charAt(answer.length-2)+answer.charAt(answer.length-1) == "ال" ){
