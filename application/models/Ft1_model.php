@@ -585,7 +585,7 @@
 
                     $this->data_kata("533", "Mufrodat 46", "مَـوْقِـدٌ", "مَوْقِدٌ", "Kompor"),
                     $this->data_kata("534", "Mufrodat 46", "قِـدْرٌ", "قِدْرٌ", "Panci"),
-                    $this->data_kata("535", "Mufrodat 46", "مِـقْـلاَةٌ", "مِقْلاَةٌ", "Wajan"),
+                    $this->data_kata("535", "Mufrodat 46", "مِـقْـلَاةٌ", "مِقْلَاةٌ", "Wajan"),
                     $this->data_kata("536", "Mufrodat 46", "مَائِـدَةٌ", "مَائِدَةٌ", "Meja Makan"),
                     $this->data_kata("537", "Mufrodat 46", "مِـقْـلَـبٌ", "مِقْلَبٌ", "Spatula"),
                     $this->data_kata("538", "Mufrodat 46", "إِبْـرِيْـقٌ", "إِبْرِيْقٌ", "Teko"),
@@ -671,7 +671,7 @@
                     $this->data_kata("612", "Mufrodat 52", "اِنْـقَـطَـعَ-يَـنْـقَـطِـعُ-اِنْـقِـطَاعًا", "اِنْقَطَعَ-يَنْقَطِعُ-اِنْقِطَاعًا", "Terpotong"),
                     $this->data_kata("613", "Mufrodat 52", "هَـيَّأَ-يُـهَـيِّءُ-تَـهْـيِـيْـئًا", "هَيَّأَ-يُهَيِّءُ-تَهْيِيْئًا", "Menghidangkan"),
                     $this->data_kata("614", "Mufrodat 52", "خَـلَـطَ-يَـخْـلِـطُ-خَـلْـطًا", "خَلَطَ-يَخْلِطُ-خَلْطًا", "Mencampur"),
-                    $this->data_kata("615", "Mufrodat 52", "اِخْـتَـلَـطَ-يَـخْـتَـلِـطُ-اِخْـتِـلاَطًا", "اِخْتَلَطَ-يَخْتَلِطُ-اِخْتِلاَطًا", "Tercampur"),
+                    $this->data_kata("615", "Mufrodat 52", "اِخْـتَـلَـطَ-يَـخْـتَـلِـطُ-اِخْـتِـلَاطًا", "اِخْتَلَطَ-يَخْتَلِطُ-اِخْتِلَاطًا", "Tercampur"),
                     $this->data_kata("616", "Mufrodat 52", "اِسْـتَـهْـلَـكَ-يَـسْـتَـهْـلِـكُ-اِسْـتِـهْـلَاكًا", "اِسْتَهْلَكَ-يَسْتَهْلِكُ-اِسْتِهْلَاكًا", "Mengkonsumsi"),
                     $this->data_kata("617", "Mufrodat 52", "قَـنَـعَ-يَـقْـنَـعُ-قَـنَاعَـةً", "قَنَعَ-يَقْنَعُ-قَنَاعَةً", "Puas"),
                     $this->data_kata("618", "Mufrodat 52", "مَـتَّـعَ-يُـمَـتِّـعُ-تَـمْـتِـيْـعًا", "مَتَّعَ-يُمَتِّعُ-تَمْتِيْعًا", "Menikmati"),
@@ -700,7 +700,7 @@
                     $this->data_kata("639", "Mufrodat 54", "مَـعْـجُـوْنٌ", "مَعْجُوْنٌ", "Pasta gigi"),
                     $this->data_kata("640", "Mufrodat 54", "فُـرْشَـةٌ", "فُرْشَةٌ", "Sikat"),
                     $this->data_kata("641", "Mufrodat 54", "مِـنْـشَـفَـةٌ", "مِنْشَفَةٌ", "Handuk"),
-                    $this->data_kata("642", "Mufrodat 54", "مِـعْـلاَقٌ", "مِعْلاَقٌ", "Hanger"),
+                    $this->data_kata("642", "Mufrodat 54", "مِـعْـلَاقٌ", "مِعْلَاقٌ", "Hanger"),
                     $this->data_kata("643", "Mufrodat 54", "دَلْـوٌ", "دَلْوٌ", "Ember"),
                     $this->data_kata("644", "Mufrodat 54", "مِـغْـرَفَـةٌ", "مِغْرَفَةٌ", "Gayung"),
 
@@ -812,7 +812,7 @@
                     $this->data_kata("742", "Mufrodat 63", "مَـثَّـلَ - يُـمَـثِّـلُ - تَـمْـثِـيْـلًا", "مَثَّلَ-يُمَثِّلُ-تَمْثِيْلًا", "Mencontohkan"),
                     $this->data_kata("743", "Mufrodat 63", "مَـرَّنَ - يُـمَـرِّنُ - تَـمْـرِيْـنًا", "مَرَّنَ-يُمَرِّنُ-تَمْرِيْنًا", "Latihan"),
                     $this->data_kata("744", "Mufrodat 63", "اِمْـتَـحَـنَ - يَـمْـتَـحِـنُ - اِمْـتِـحَانًا", "اِمْتَحَنَ-يَمْتَحِنُ-اِمْتِحَانًا", "Ujian"),
-                    $this->data_kata("745", "Mufrodat 63", "اَفَادَ - يُـفِـيْـدُ - إفِاَدَةً", "اَفَادَ-يُفِيْدُ-إفِاَدَةً", "Memanfaatkan"),
+                    $this->data_kata("745", "Mufrodat 63", "اَفَادَ - يُـفِـيْـدُ - إِفَادَةً", "اَفَادَ-يُفِيْدُ-إِفَادَةً", "Memanfaatkan"),
                     $this->data_kata("746", "Mufrodat 63", "اِسْـتَـفَادَ - يَـسْـتَـفِـيْـدُ - اِسْـتِـفَادَةً", "اِسْتَفَادَ-يَسْتَفِيْدُ-اِسْتِفَادَةً", "Mengambil Faedah"),
                     $this->data_kata("747", "Mufrodat 63", "عَـمِـلَ - يَـعْـمَـلُ - عَـمَـلًا", "عَمِلَ-يَعْمَلُ-عَمَلًا", "Mengerjakan"),
 
@@ -990,7 +990,7 @@
                     $this->data_kata("905", "Mufrodat 77", "حَمَلَ-يَحْمِلُ-حَمْلًا", "حَمَلَ-يَحْمِلُ-حَمْلًا", "Membawa"),
                     $this->data_kata("906", "Mufrodat 77", "أَعْطَى-يُعْطِى-إِعْطَاءً", "أَعْطَى-يُعْطِى-إِعْطَاءً", "Memberi"),
                     $this->data_kata("907", "Mufrodat 77", "زَادَ-يَزِيْدُ-زِيَادَةً", "زَادَ-يَزِيْدُ-زِيَادَةً", "Menambah"),
-                    $this->data_kata("908", "Mufrodat 77", "اِزْدَادَ-يَزدَادُ-اِزْدِيَادًا", "اِزْدَادَ-يَزدَادُ-اِزْدِيَادًا", "Bertambah"),
+                    $this->data_kata("908", "Mufrodat 77", "اِزْدَادَ-يَزْدَادُ-اِزْدِيَادًا", "اِزْدَادَ-يَزْدَادُ-اِزْدِيَادًا", "Bertambah"),
                     $this->data_kata("909", "Mufrodat 77", "قَاءَ-يَقِيْئُ-قَيْئًا", "قَاءَ-يَقِيْئُ-قَيْئًا", "Muntah"),
                     $this->data_kata("910", "Mufrodat 77", "سَعَلَ-يَسْعُلُ-سُعَالًا", "سَعَلَ-يَسْعُلُ-سُعَالًا", "Batuk"),
                     
@@ -1047,7 +1047,7 @@
                     $this->data_kata("958", "Mufrodat 81", "غَزَالٌ", "غَزَالٌ", "Kijang"),
 
                     $this->data_kata("959", "Mufrodat 82", "قِرْدٌ", "قِرْدٌ", "Kera"),
-                    $this->data_kata("960", "Mufrodat 82", "أُورَانْغُوْتَانْ", "أُورَانْغُوْتَانْ", "Orangutan"),
+                    $this->data_kata("960", "Mufrodat 82", "أُوْرَانْغُوْتَانْ", "أُوْرَانْغُوْتَانْ", "Orangutan"),
                     $this->data_kata("961", "Mufrodat 82", "عَقْرَبٌ", "عَقْرَبٌ", "Kalajengking"),
                     $this->data_kata("962", "Mufrodat 82", "حُنْفَسَاءُ", "حُنْفَسَاءُ", "Kumbang"),
                     $this->data_kata("963", "Mufrodat 82", "جَرَادٌ", "جَرَادٌ", "Belalang"),
@@ -1065,7 +1065,7 @@
                     $this->data_kata("974", "Mufrodat 83", "بُوْمَةٌ", "بُوْمَةٌ", "Burung hantu"),
                     $this->data_kata("975", "Mufrodat 83", "طَاوُوْسٌ", "طَاوُوْسٌ", "Merak"),
                     $this->data_kata("976", "Mufrodat 83", "حَمَامَةٌ", "حَمَامَةٌ", "Merpati"),
-                    $this->data_kata("977", "Mufrodat 83", "حَلَزُوْن", "حَلَزُوْن", "Keong, siput"),
+                    $this->data_kata("977", "Mufrodat 83", "حَلَزُوْنٌ", "حَلَزُوْنٌ", "Keong, siput"),
                     $this->data_kata("978", "Mufrodat 83", "سُلَحْفَاةٌ", "سُلَحْفَاةٌ", "Kura-kura"),
                     $this->data_kata("979", "Mufrodat 83", "حَيْتَانٌ", "حَيْتَانٌ", "Ikan Paus"),
                     $this->data_kata("980", "Mufrodat 83", "قِرَشٌ", "قِرَشٌ", "Ikan Hiu"),
@@ -1100,7 +1100,7 @@
                     $this->data_kata("1006", "Mufrodat 86", "بَابَايَا", "بَابَايَا", "Pepaya"),
                     $this->data_kata("1007", "Mufrodat 86", "مَنْجَا", "مَنْجَا", "Mangga"),
                     $this->data_kata("1008", "Mufrodat 86", "نَرَاجِيْلُ", "نَرَاجِيْلُ", "Kelapa"),
-                    $this->data_kata("1009", "Mufrodat 86", "اَفُوْكَادُو", "اَفُوْكَادُو", "Avokad"),
+                    $this->data_kata("1009", "Mufrodat 86", "اَفُوْكَادُوْ", "اَفُوْكَادُوْ", "Avokad"),
                     $this->data_kata("1010", "Mufrodat 86", "شَمَامٌ", "شَمَامٌ", "Melon"),
                     $this->data_kata("1011", "Mufrodat 86", "بِطِّيْخٌ", "بِطِّيْخٌ", "Semangka"),
                     $this->data_kata("1012", "Mufrodat 86", "جَوْزُ الجَنْدَمِ", "جَوْزُ الجَنْدَمِ", "Manggis"),
@@ -1304,7 +1304,7 @@
                     $this->data_kata("1194", "Mufrodat 102", "مَجْلِسُ النَّوَابِ", "مَجْلِسُ النَّوَابِ", "DPR"),
                     $this->data_kata("1195", "Mufrodat 102", "مُحَافِظٌ", "مُحَافِظٌ", "Gubernur"),
                     $this->data_kata("1196", "Mufrodat 102", "عُمْدَةٌ", "عُمْدَةٌ", "Walikota"),
-                    $this->data_kata("1197", "Mufrodat 102", "رَئِيْسُ  الْمُقَاطَعَةِ", "رَئِيْسُ  الْمُقَاطَعَةِ", "Bupati"),
+                    $this->data_kata("1197", "Mufrodat 102", "رَئِيْسُ الْمُقَاطَعَةِ", "رَئِيْسُ الْمُقَاطَعَةِ", "Bupati"),
                     $this->data_kata("1198", "Mufrodat 102", "رَئِيْسُ النَّاحِيَةِ", "رَئِيْسُ النَّاحِيَةِ", "Camat"),
                     $this->data_kata("1199", "Mufrodat 102", "رَئِيْسُ الْقَرْيَةِ", "رَئِيْسُ الْقَرْيَةِ", "Kades"),
                     
@@ -1361,7 +1361,7 @@
                     $this->data_kata("1246", "Mufrodat 107", "مِرْآةٌ ج مَرَايَا", "مِرْآةٌ ج مَرَايَا", "Cermin"),
                     $this->data_kata("1247", "Mufrodat 107", "تُبَّانٌ ج تُبَّانَاتٌ، تَبَابِيْنُ", "تُبَّانٌ ج تُبَّانَاتٌ", "Celana dalam"),
                     $this->data_kata("1248", "Mufrodat 107", "بِنْطَالٌ ج بَنَاطِيْلُ", "بِنْطَالٌ ج بَنَاطِيْلُ", "Celana panjang"),
-                    $this->data_kata("1249", "Mufrodat 107", "سِرْوَالٌ  ج سَرَاوِيْلُ", "سِرْوَالٌ  ج سَرَاوِيْلُ", "Celana pendek"),
+                    $this->data_kata("1249", "Mufrodat 107", "سِرْوَالٌ ج سَرَاوِيْلُ", "سِرْوَالٌ ج سَرَاوِيْلُ", "Celana pendek"),
                     $this->data_kata("1250", "Mufrodat 107", "قِصَّةٌ ج قِصَصٌ", "قِصَّةٌ ج قِصَصٌ", "Cerita"),
                     $this->data_kata("1251", "Mufrodat 107", "مِثَالٌ ج أَمْثِلَةٌ", "مِثَالٌ ج أَمْثِلَةٌ", "Contoh"),
                     $this->data_kata("1252", "Mufrodat 107", "مَطْبَخٌ ج مَطَابِخُ", "مَطْبَخٌ ج مَطَابِخُ", "Dapur"),
@@ -1396,7 +1396,7 @@
                     $this->data_kata("1279", "Mufrodat 109", "رُوْحٌ ج أَرْوَاحٌ", "رُوْحٌ ج أَرْوَاحٌ", "Ruh"),
                     $this->data_kata("1280", "Mufrodat 109", "مِلْيُوْنٌ ج مَلَايِيْنَ", "مِلْيُوْنٌ ج مَلَايِيْنَ", "Juta"),
                     $this->data_kata("1281", "Mufrodat 109", "قَاعِدَةٌ ج قَوَاعِدُ", "قَاعِدَةٌ ج قَوَاعِدُ", "Kaidah"),
-                    $this->data_kata("1282", "Mufrodat 109", "جَدٌّ ج  أَجْدَادٌ", "جَدٌّ ج  أَجْدَادٌ", "Kakek"),
+                    $this->data_kata("1282", "Mufrodat 109", "جَدٌّ ج أَجْدَادٌ", "جَدٌّ ج أَجْدَادٌ", "Kakek"),
                     $this->data_kata("1283", "Mufrodat 109", "رِجْلٌ ج أَرْجُلٌ", "رِجْلٌ ج أَرْجُلٌ", "Kaki"),
                     $this->data_kata("1284", "Mufrodat 109", "جُمْلَةٌ ج جُمَلٌ", "جُمْلَةٌ ج جُمَلٌ", "Kalimat"),
                     $this->data_kata("1285", "Mufrodat 109", "حُجْرَةٌ ج حُجُرَاتٌ", "حُجْرَةٌ ج حُجُرَاتٌ", "Kamar"),
@@ -1781,7 +1781,7 @@
                     $huruf[$i] = substr($kata, -1);
                     $kata = substr($kata, 0, -1);
                 } else if(substr($kata, -1) == " "){
-                    $huruf[$i] = "_";
+                    $huruf[$i] = " ";
                     $kata = substr($kata, 0, -1);
                 } else if(substr($kata, -1) == "/"){
                     $huruf[$i] = substr($kata, -1);

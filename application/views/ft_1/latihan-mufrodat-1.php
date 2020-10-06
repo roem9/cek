@@ -161,11 +161,17 @@
         }
 
         if(html == $("input[name='kunci"+id+"']").val()){
+            $(".icon-cek-"+id).html(`<i class="fa fa-check-circle text-success"></i>`);
+            $(".bg-cek-"+id).removeClass("list-group-item-danger");
+            $(".bg-cek-"+id).addClass("list-group-item-success");
             $("#j"+id).html(html);
             $("#jawaban"+id).val("betul");
             $("#select"+id).hide();
             $("#btnEdit"+id).show();
         } else {
+            $(".icon-cek-"+id).html(`<i class="fa fa-times-circle text-danger"></i>`);
+            $(".bg-cek-"+id).removeClass("list-group-item-success");
+            $(".bg-cek-"+id).addClass("list-group-item-danger");
             $("#j"+id).html(html);
             $("#jawaban"+id).val("salah");
             $("#select"+id).hide();

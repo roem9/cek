@@ -43,8 +43,8 @@
                                             <div class="container">
                                                 <div class="row justify-content-center">
                                                     <?php 
-                                                        if(in_array("ج", $kalimat['huruf']) && in_array("_", $kalimat['huruf'])){
-                                                            $kalimat['huruf'] = array_diff($kalimat['huruf'], array('ج', '_'));
+                                                        if(in_array("ج", $kalimat['huruf']) && in_array(" ", $kalimat['huruf'])){
+                                                            $kalimat['huruf'] = array_diff($kalimat['huruf'], array('ج', ' '));
                                                             $kalimat['huruf'][] = " ج ";
                                                         }
 
@@ -136,10 +136,15 @@
         data = data.split("|");
         let kata = data[0];
         let id = data[1];
-        
         let html = $("#jaw"+id).val();
 
-        $("#jaw"+id).val(html + "" + kata);
+        // console.log(kata)
+        // console.log(html.slice(-1))
+        if(html.slice(-1) == " " && kata == " "){
+        } else {
+            $("#jaw"+id).val(html + "" + kata);
+        }
+
     })
 
     $(".cek").click(function(){
@@ -150,17 +155,23 @@
         html = $("#jaw"+id).val();
         html = html.replace(/_/g, " ")
 
-        console.log(html)
+        // console.log(html)
         if(html === 'undefined'){
             html = '-';
         }
 
         if(html == $("input[name='kunci"+id+"']").val()){
+            $(".icon-cek-"+id).html(`<i class="fa fa-check-circle text-success"></i>`);
+            $(".bg-cek-"+id).removeClass("list-group-item-danger");
+            $(".bg-cek-"+id).addClass("list-group-item-success");
             $("#j"+id).html(html);
             $("#jawaban"+id).val("betul");
             $("#select"+id).hide();
             $("#btnEdit"+id).show();
         } else {
+            $(".icon-cek-"+id).html(`<i class="fa fa-times-circle text-danger"></i>`);
+            $(".bg-cek-"+id).removeClass("list-group-item-success");
+            $(".bg-cek-"+id).addClass("list-group-item-danger");
             $("#j"+id).html(html);
             $("#jawaban"+id).val("salah");
             $("#select"+id).hide();
@@ -184,7 +195,7 @@
             hapus = answer.slice(0,-2);
         } else if (answer.charAt(answer.length-2) == "ّ" || answer.charAt(answer.length-1) == "ّ"){
             hapus = answer.slice(0,-3);
-        } else if(answer.charAt(answer.length-1) == "ا" || answer.charAt(answer.length-1) == "ى" || answer.charAt(answer.length-1) == "ج" || answer.charAt(answer.length-1) == "-" || answer.charAt(answer.length-1) == "_" || answer.charAt(answer.length-1) == "ل" || answer.charAt(answer.length-1) == "آ" || answer.charAt(answer.length-1) == "ي" || answer.charAt(answer.length-1) == "و" || answer.charAt(answer.length-1) == "/"){
+        } else if(answer.charAt(answer.length-1) == "ا" || answer.charAt(answer.length-1) == "ى" || answer.charAt(answer.length-1) == "ج" || answer.charAt(answer.length-1) == "-" || answer.charAt(answer.length-1) == " " || answer.charAt(answer.length-1) == "ل" || answer.charAt(answer.length-1) == "آ" || answer.charAt(answer.length-1) == "ي" || answer.charAt(answer.length-1) == "و" || answer.charAt(answer.length-1) == "/"){
             hapus = answer.slice(0,-1);
         } else {
             hapus = answer.slice(0,-2);
