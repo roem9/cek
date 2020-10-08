@@ -52,14 +52,14 @@
                 $this->data_kalimat("45", "3", "أنتَ مُمْتِعٌ", "Kamu menyenangkan", "menggemaskan lebay", "مُخْجِلٌ لَطِيْفٌ"),
 
                 $this->data_kalimat("46", "4", "ابْتَعِدْ عَنِ التَدْخِينِ قَدْرَ اْلإِمْكَانِ", "Jauhilah rokok sebisa mungkin!"),
-                $this->data_kalimat("47", "4", "قُلْ بِصَرَاحَةٍ", "Katakan dengan terus terang!", "ابْتَعِدْ عَنِ"),
+                $this->data_kalimat("47", "4", "قُلْ بِصَرَاحَةٍ", "Katakan dengan terus terang!", "", "ابْتَعِدْ عَنِ"),
                 $this->data_kalimat("48", "4", "احْفَظُوْا ظَهْرًا عَنْ غَيْبٍ", "Hafalkan di luar kepala!"),
                 $this->data_kalimat("49", "4", "أَصْلِحْ غِلْطَتَكَ", "Perbaiki kesalahanmu!", "bahasamu! ucapanmu!", "لُغَتَكَ كَلامِي"),
                 $this->data_kalimat("50", "4", "مارِسْ لُغَتَكَ", "Praktekkan bahasamu!", "ucapanmu!", "كَلامِي"),
                 $this->data_kalimat("51", "4", "أَيْقِظْنِيْ في الساعةِ الثالِثةِ صَبَاحًا", "Bangunkan saya jam tiga pagi!"),
                 $this->data_kalimat("52", "4", "أغْلِقِ البَابَ", "Tutup pintunya!", "Ikuti ucapanku!", "قَلِّدْ كَلامِي"),
                 $this->data_kalimat("53", "4", "اُدْخُلْ فِي الطَّابُورِ", "Antri dong!", "Hati-hati jalan!", "الطَّرِيْقِ"),
-                $this->data_kalimat("54", "4", "تَنَبَّهْ فِي الطَّرِيْقِ", "Hati-hati di jalan!", "الطَّابُورِ"),
+                $this->data_kalimat("54", "4", "تَنَبَّهْ فِي الطَّرِيْقِ", "Hati-hati di jalan!", "Pergilah", "الطَّابُورِ"),
                 $this->data_kalimat("55", "4", "قَلِّدْ كَلامِي", "Ikuti ucapanku!", "Tutup pintunya!", "أغْلِقِ البَابَ"),
 
                 $this->data_kalimat("56", "5", "كَرِّرْ مَرَّةً ثَانِيةً", "Ulangi lagi!", "Sekali", "أُخْرَى"),

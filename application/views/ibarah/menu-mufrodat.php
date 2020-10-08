@@ -106,9 +106,9 @@
         let link = data[1];
 
         if(judul == "Latihan 1"){
-            $(".message").html("Latihan menerjemahkan bahasa Indonesia Ke bahasa Arab")
-        } else if (judul == "Latihan 2"){
             $(".message").html("Latihan menerjemahkan bahasa Arab Ke bahasa Indonesia")
+        } else if (judul == "Latihan 2"){
+            $(".message").html("Latihan menerjemahkan bahasa Indonesia Ke bahasa Arab")
         } else {
             $(".message").html("Latihan menerjemahkan bahasa Indonesia Ke bahasa Arab dengan mengetik")
         }

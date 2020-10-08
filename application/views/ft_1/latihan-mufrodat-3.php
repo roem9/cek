@@ -4,7 +4,7 @@
                     <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times"></i> keluar</a>
                 </div>
                 <div class="col-12 mb-1">
-                    <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Ketik bahasa Arab dari setiap kata berikut, kemudian tekan tombol <strong>simpan</strong>. Gunakan "<strong>_</strong>" sebagai pengganti spasi</div>
+                    <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Ketik bahasa Arab dari setiap kata berikut, kemudian tekan tombol <strong>simpan</strong>.</div>
                 </div>
                 <div class="col-12">
                     <div class="form-group">
