@@ -171,10 +171,16 @@
 
     $(".hapus").click(function(){
         let id = $(this).data("id");
-        
-        $("#jaw"+id).val("");
+        let kalimat = $("#jaw"+id).val();
+        kalimat = kalimat.split(" ");
+
+        let data = "";
+        for (let i = 1; i < kalimat.length-1; i++) {
+            data += " " + kalimat[i];
+        }
+
+        $("#jaw"+id).val(data);
     })
-// لَا
 
     $(".edit").click(function(){
         let id = $(this).data("id");

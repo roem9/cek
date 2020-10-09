@@ -28,7 +28,7 @@
                             <li class="list-group-item bg-cek-<?= $i?>">
                                 <div class="form-group">
                                     <!-- <div class="arab"> -->
-                                        <label for="<?=$i?>" id="container-content"><strong><?= $i+1?>. <?= $kalimat['kata_arab']?></strong></label>
+                                        <label for="<?=$i?>" id="container-content"><strong><?= angka_arab($i+1)?>. <?= $kalimat['kata_arab']?></strong></label>
                                         <span class="icon-cek-<?= $i?>"></span>
                                     <!-- </div> -->
                                     <input type="hidden" name="kunci<?=$i?>" value="<?= $kalimat['arti']?>">
