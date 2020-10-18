@@ -5,7 +5,7 @@
                 // 1-9
                     $this->data_kata("1", "Mufrodat 1", "مَا", "مَا", "Apa"),
                     $this->data_kata("2", "Mufrodat 1", "مَنْ", "مَنْ", "Siapa"),
-                    $this->data_kata("3", "Mufrodat 1", "مَاذَا", "مَاذَا", "Apa", "", "off"),
+                    $this->data_kata("3", "Mufrodat 1", "مَاذَا", "مَاذَا", "Apa"),
                     $this->data_kata("4", "Mufrodat 1", "لِـمَاذَا", "لِمَاذَا", "Kenapa"),
                     $this->data_kata("5", "Mufrodat 1", "مِمَّ", "مِمَّ", "Dari apa"),
                     $this->data_kata("6", "Mufrodat 1", "بِـمَاذَا", "بِمَاذَا", "Dengan apa"),
@@ -1010,7 +1010,7 @@
                     $this->data_kata("923", "Mufrodat 79", "خِنْزِيْرٌ", "خِنْزِيْرٌ", "Babi"),
                     $this->data_kata("924", "Mufrodat 79", "بَقَرٌ", "بَقَرٌ", "Sapi"),
                     $this->data_kata("925", "Mufrodat 79", "جَامُوْسٌ", "جَامُوْسٌ", "Kerbau"),
-                    $this->data_kata("926", "Mufrodat 79", "حِصَانٌ", "حِصَانٌ", "Kuda"),
+                    $this->data_kata("926", "Mufrodat 79", "ح��صَانٌ", "حِصَانٌ", "Kuda"),
                     $this->data_kata("927", "Mufrodat 79", "دَجَاجٌ", "دَجَاجٌ", "Ayam"),
                     $this->data_kata("928", "Mufrodat 79", "غَنَمٌ", "غَنَمٌ", "Kambing"),
 
@@ -1527,7 +1527,7 @@
 
                 $this->data_tema("5", "6", "7", "عَـقْـلٌ - حَاجِـبٌ", "9", "4"),
                 $this->data_tema("6", "7", "8", "هُـدْبٌ - ذِرَاعٌ", "9", "4"),
-                $this->data_tema("7", "8", "9", "بَـطْـنٌ - كَـعْـبٌ", "9", "4"),
+                $this->data_tema("7", "8", "9", "بَ��طْـنٌ - كَـعْـبٌ", "9", "4"),
                 $this->data_tema("8", "9", "10", "سَاقٌّ - شَامَـةٌ", "9", "4"),
                 
                 $this->data_tema("9", "10", "11", "رُوْحٌ - كَـبِـدٌ", "9", "5"),
@@ -1882,47 +1882,47 @@
             $data = [
                 $this->kata_mufrod_mutsanna("1", "كِتَابَيْنِ (Mufrod Subjek)", "كِتَابٌ", "كِتَابٌ"),
                 $this->kata_mufrod_mutsanna("1", "كِتَابَيْنِ (Mufrod Objek)", "كِتَابٌ", "كِتَابًا"),
-                $this->kata_mufrod_mutsanna("1", "كِتَابًا (Mutsanna Objek)", "كِتَابٌ", "كِتَابَانِ"),
+                $this->kata_mufrod_mutsanna("1", "كِتَابًا (Mutsanna Subjek)", "كِتَابٌ", "كِتَابَانِ"),
                 $this->kata_mufrod_mutsanna("1", "كِتَابٌ (Mutsanna Objek)", "كِتَابٌ", "كِتَابَيْنِ"),
                 $this->kata_mufrod_mutsanna("1", "سَيَّارَتَيْنِ (Mufrod Subjek)", "سَيَّارَةٌ", "سَيَّارَةٌ"),
                 $this->kata_mufrod_mutsanna("1", "سَيَّارَتَانِ (Mufrod Objek)", "سَيَّارَةٌ", "سَيَّارَةً"),
-                $this->kata_mufrod_mutsanna("1", "سَيَّارَةً (Mutsanna Objek)", "سَيَّارَةٌ", "سَيَّارَتَانِ"),
-                $this->kata_mufrod_mutsanna("1", "كِتَابٌ (Mutsanna Objek)", "سَيَّارَةٌ", "سَيَّارَتَيْنِ"),
+                $this->kata_mufrod_mutsanna("1", "سَيَّارَةً (Mutsanna Subjek)", "سَيَّارَةٌ", "سَيَّارَتَانِ"),
+                $this->kata_mufrod_mutsanna("1", "سَيَّارَةٌ (Mutsanna Objek)", "سَيَّارَةٌ", "سَيَّارَتَيْنِ"),
                 
                 $this->kata_mufrod_mutsanna("2", "سَقْفَيْنِ (Mufrod Subjek)", "سَقْفٌ", "سَقْفٌ"),
                 $this->kata_mufrod_mutsanna("2", "سَقْفَانِ (Mufrod Objek)", "سَقْفٌ", "سَقْفًا"),
-                $this->kata_mufrod_mutsanna("2", "سَقْفٌ (Mutsanna Objek)", "سَقْفٌ", "سَقْفَانِ"),
+                $this->kata_mufrod_mutsanna("2", "سَقْفٌ (Mutsanna Subjek)", "سَقْفٌ", "سَقْفَانِ"),
                 $this->kata_mufrod_mutsanna("2", "سَقْفًا (Mutsanna Objek)", "سَقْفٌ", "سَقْفَيْنِ"),
                 $this->kata_mufrod_mutsanna("2", "مِعْلَمَتَيْنِ (Mufrod Subjek)", "مِعْلَمَةٌ", "مِعْلَمَةٌ"),
                 $this->kata_mufrod_mutsanna("2", "مِعْلَمَتَانِ (Mufrod Objek)", "مِعْلَمَةٌ", "مِعْلَمَةً"),
-                $this->kata_mufrod_mutsanna("2", "مِعْلَمَةً (Mutsanna Objek)", "مِعْلَمَةٌ", "مِعْلَمَتَانِ"),
+                $this->kata_mufrod_mutsanna("2", "مِعْلَمَةً (Mutsanna Subjek)", "مِعْلَمَةٌ", "مِعْلَمَتَانِ"),
                 $this->kata_mufrod_mutsanna("2", "مِعْلَمَةٌ (Mutsanna Objek)", "مِعْلَمَةٌ", "مِعْلَمَتَيْنِ"),
 
                 $this->kata_mufrod_mutsanna("3", "فَصْلَيْنِ (Mufrod Subjek)", "فَصْلٌ", "فَصْلٌ"),
                 $this->kata_mufrod_mutsanna("3", "فَصْلَانِ (Mufrod Objek)", "فَصْلٌ", "فَصْلًا"),
-                $this->kata_mufrod_mutsanna("3", "فَصْلٌ (Mutsanna Objek)", "فَصْلٌ", "فَصْلَانِ"),
+                $this->kata_mufrod_mutsanna("3", "فَصْلٌ (Mutsanna Subjek)", "فَصْلٌ", "فَصْلَانِ"),
                 $this->kata_mufrod_mutsanna("3", "فَصْلًا (Mutsanna Objek)", "فَصْلٌ", "فَصْلَيْنِ"),
                 $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَتَيْنِ (Mufrod Subjek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَةٌ"),
                 $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَتَانِ (Mufrod Objek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَةً"),
-                $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَةٌ (Mutsanna Objek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَتَانِ"),
+                $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَةٌ (Mutsanna Subjek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَتَانِ"),
                 $this->kata_mufrod_mutsanna("3", "تِلْمِيْذَةً (Mutsanna Objek)", "تِلْمِيْذَةٌ", "تِلْمِيْذَتَيْنِ"),
 
                 $this->kata_mufrod_mutsanna("4", "عَيْنَيْنِ (Mufrod Subjek)", "عَيْنٌ", "عَيْنٌ"),
                 $this->kata_mufrod_mutsanna("4", "عَيْنَانِ (Mufrod Objek)", "عَيْنٌ", "عَيْنًا"),
-                $this->kata_mufrod_mutsanna("4", "عَيْنًا (Mutsanna Objek)", "عَيْنٌ", "عَيْنَانِ"),
+                $this->kata_mufrod_mutsanna("4", "عَيْنًا (Mutsanna Subjek)", "عَيْنٌ", "عَيْنَانِ"),
                 $this->kata_mufrod_mutsanna("4", "عَيْنٌ (Mutsanna Objek)", "عَيْنٌ", "عَيْنَيْنِ"),
                 $this->kata_mufrod_mutsanna("4", "سَاعَتَيْنِ (Mufrod Subjek)", "سَاعَةٌ", "سَاعَةٌ"),
                 $this->kata_mufrod_mutsanna("4", "سَاعَتَانِ (Mufrod Objek)", "سَاعَةٌ", "سَاعَةً"),
-                $this->kata_mufrod_mutsanna("4", "سَاعَةً (Mutsanna Objek)", "سَاعَةٌ", "سَاعَتَانِ"),
+                $this->kata_mufrod_mutsanna("4", "سَاعَةً (Mutsanna Subjek)", "سَاعَةٌ", "سَاعَتَانِ"),
                 $this->kata_mufrod_mutsanna("4", "سَاعَةٌ (Mutsanna Objek)", "سَاعَةٌ", "سَاعَتَيْنِ"),
                 
                 $this->kata_mufrod_mutsanna("5", "سِلْكَانِ (Mufrod Subjek)", "سِلْكٌ", "سِلْكٌ"),
                 $this->kata_mufrod_mutsanna("5", "سِلْكَانِ (Mufrod Objek)", "سِلْكٌ", "سِلْكًا"),
-                $this->kata_mufrod_mutsanna("5", "سِلْكٌ (Mutsanna Objek)", "سِلْكٌ", "سِلْكَانِ"),
+                $this->kata_mufrod_mutsanna("5", "سِلْكٌ (Mutsanna Subjek)", "سِلْكٌ", "سِلْكَانِ"),
                 $this->kata_mufrod_mutsanna("5", "سِلْكًا (Mutsanna Objek)", "سِلْكٌ", "سِلْكَيْنِ"),
                 $this->kata_mufrod_mutsanna("5", "مَدْرَسَتَيْنِ (Mufrod Subjek)", "مَدْرَسَةٌ", "مَدْرَسَةٌ"),
                 $this->kata_mufrod_mutsanna("5", "مَدْرَسَتَانِ (Mufrod Objek)", "مَدْرَسَةٌ", "مَدْرَسَةً"),
-                $this->kata_mufrod_mutsanna("5", "مَدْرَسَةٌ (Mutsanna Objek)", "مَدْرَسَةٌ", "مَدْرَسَتَانِ"),
+                $this->kata_mufrod_mutsanna("5", "مَدْرَسَةٌ (Mutsanna Subjek)", "مَدْرَسَةٌ", "مَدْرَسَتَانِ"),
                 $this->kata_mufrod_mutsanna("5", "مَدْرَسَةً (Mutsanna Objek)", "مَدْرَسَةٌ", "مَدْرَسَتَيْنِ"),
             ];
 
@@ -2094,7 +2094,7 @@
                 $this->data_kata("", "Mufrodat 1", "هُـمَا", "هُمَا", "Dia (pr) 2"),
                 $this->data_kata("", "Mufrodat 1", "هُـنَّ", "هُنَّ", "Mereka (pr)"),
                 $this->data_kata("", "Mufrodat 1", "أَنْـتَ", "أَنْتَ", "Kamu (lk) 1"),
-                $this->data_kata("", "Mufrodat 1", "أنْـتُـمَا", "أنْتُمَا", "Kamu (lk) 2"),
+                $this->data_kata("", "Mufrodat 1", "أنْـتُـمَا", "أَنْتُمَا", "Kamu (lk) 2"),
                 $this->data_kata("", "Mufrodat 1", "أَنْـتُـمْ", "أَنْتُمْ", "Kalian (lk)"),
                 $this->data_kata("", "Mufrodat 1", "أَنْـتِ", "أَنْتِ", "Kamu (pr) 1"),
                 $this->data_kata("", "Mufrodat 1", "أنْـتُـمَا", "أنْتُمَا", "Kamu (pr) 2"),
@@ -2345,6 +2345,510 @@
             }
 
             $data = $huwa . " " . $huma . " " . $hum . " " . $hiya . " " . $huma . " " . $hunna . " " . $anta . " " . $antuma . " " . $antum . " " . $anti . " " . $antunna . " " . $ana . " " . $nahnu;
+
+            return $data;
+        }
+
+        public function dhomir_muttashil_maful(){
+            $data = [
+                $this->kata_dhomir_muttashil_maful("1", "اِضْرِبْ + هُوَ", "اِضْرِبْ", "اِضْرِبْهُ"),
+                $this->kata_dhomir_muttashil_maful("1", "اِضْرِبْ + هُمَا", "اِضْرِبْ", "اِضْرِبْهُمَا"),
+                $this->kata_dhomir_muttashil_maful("1", "اِضْرِبْ + هُمْ", "اِضْرِبْ", "اِضْرِبْهُمْ"),
+                $this->kata_dhomir_muttashil_maful("1", "يَنْظُرُ + هِيَ", "يَنْظُرُ", "يَنْظُرُهَا"),
+                $this->kata_dhomir_muttashil_maful("1", "يَنْظُرُ + هُنَّ", "يَنْظُرُ", "يَنْظُرُهُنَّ"),
+                $this->kata_dhomir_muttashil_maful("1", "نَظَرَ + أَنْتَ", "نَظَرَ", "نَظَرَكَ"),
+                $this->kata_dhomir_muttashil_maful("1", "نَظَرَ + أَنْتُمَا", "نَظَرَ", "نَظَرَكُمَا"),
+                $this->kata_dhomir_muttashil_maful("1", "نَظَرَ + أَنْتُمْ", "نَظَرَ", "نَظَرَكُمْ"),
+                $this->kata_dhomir_muttashil_maful("1", "رَدِفَ + أَنْتِ", "رَدِفَ", "رَدِفَكِ"),
+                $this->kata_dhomir_muttashil_maful("1", "رَدِفَ + أَنْتُنَّ", "رَدِفَ", "رَدِفَكُنَّ"),
+                $this->kata_dhomir_muttashil_maful("1", "رَدِفَ + أَنَا", "رَدِفَ", "رَدِفَنِيْ"),
+                $this->kata_dhomir_muttashil_maful("1", "رَدِفَ + نَحْنُ", "رَدِفَ", "رَدِفَنَا"),
+                
+                $this->kata_dhomir_muttashil_maful("2", "سَاعِدْ + هُوَ", "سَاعِدْ", "سَاعِدْهُ"),
+                $this->kata_dhomir_muttashil_maful("2", "سَاعِدْ + هُمَا", "سَاعِدْ", "سَاعِدْهُمَا"),
+                $this->kata_dhomir_muttashil_maful("2", "سَاعِدْ + هُمْ", "سَاعِدْ", "سَاعِدْهُمْ"),
+                $this->kata_dhomir_muttashil_maful("2", "يَصْدُمُ + هِيَ", "يَصْدُمُ", "يَصْدُمُهَا"),
+                $this->kata_dhomir_muttashil_maful("2", "يَصْدُمُ + هُنَّ", "يَصْدُمُ", "يَصْدُمُهُنَّ"),
+                $this->kata_dhomir_muttashil_maful("2", "أَزْعَجَ + أَنْتَ", "أَزْعَجَ", "أَزْعَجَكَ"),
+                $this->kata_dhomir_muttashil_maful("2", "أَزْعَجَ + أَنْتُمَا", "أَزْعَجَ", "أَزْعَجَكُمَا"),
+                $this->kata_dhomir_muttashil_maful("2", "أَزْعَجَ + أَنْتُمْ", "أَزْعَجَ", "أَزْعَجَكُمْ"),
+                $this->kata_dhomir_muttashil_maful("2", "شَاهَدَ + أَنْتِ", "شَاهَدَ", "شَاهَدَكِ"),
+                $this->kata_dhomir_muttashil_maful("2", "شَاهَدَ + أَنْتُنَّ", "شَاهَدَ", "شَاهَدَكُنَّ"),
+                $this->kata_dhomir_muttashil_maful("2", "شَاهَدَ + أَنَا", "شَاهَدَ", "شَاهَدَنِيْ"),
+                $this->kata_dhomir_muttashil_maful("2", "شَاهَدَ + نَحْنُ", "شَاهَدَ", "شَاهَدَنَا"),
+                
+                $this->kata_dhomir_muttashil_maful("3", "أُحِبُّ + هُوَ", "أُحِبُّ", "أُحِبُّهُ"),
+                $this->kata_dhomir_muttashil_maful("3", "أُحِبُّ + هُمَا", "أُحِبُّ", "أُحِبُّهُمَا"),
+                $this->kata_dhomir_muttashil_maful("3", "أُحِبُّ + هُمْ", "أُحِبُّ", "أُحِبُّهُمْ"),
+                $this->kata_dhomir_muttashil_maful("3", "أَرْحَمُ + هِيَ", "أَرْحَمُ", "أَرْحَمُهَا"),
+                $this->kata_dhomir_muttashil_maful("3", "أَرْحَمُ + هُنَّ", "أَرْحَمُ", "أَرْحَمُهُنَّ"),
+                $this->kata_dhomir_muttashil_maful("3", "أَمَرَ + أَنْتَ", "أَمَرَ", "أَمَرَكَ"),
+                $this->kata_dhomir_muttashil_maful("3", "أَمَرَ + أَنْتُمَا", "أَمَرَ", "أَمَرَكُمَا"),
+                $this->kata_dhomir_muttashil_maful("3", "أَمَرَ + أَنْتُمْ", "أَمَرَ", "أَمَرَكُمْ"),
+                $this->kata_dhomir_muttashil_maful("3", "أَهَانَ + أَنْتِ", "أَهَانَ", "أَهَانَكِ"),
+                $this->kata_dhomir_muttashil_maful("3", "أَهَانَ + أَنْتُنَّ", "أَهَانَ", "أَهَانَكُنَّ"),
+                $this->kata_dhomir_muttashil_maful("3", "أَهَانَ + أَنَا", "أَهَانَ", "أَهَانَنِيْ"),
+                $this->kata_dhomir_muttashil_maful("3", "أَهَانَ + نَحْنُ", "أَهَانَ", "أَهَانَنَا"),
+            ];
+
+            return $data;
+        }
+
+        public function kata_dhomir_muttashil_maful($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_dho_mut_maful($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_dhomir_muttashil_maful($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function kata_dho_mut_maful($kata){
+            $huwa = $kata . "هُ";
+            $huma = $kata . "هُمَا";
+            $hum = $kata . "هُمْ";
+            $hiya = $kata . "هَا";
+            $hunna = $kata . "هُنَّ";
+            $anta = $kata . "كَ";
+            $antuma = $kata . "كُمَا";
+            $antum = $kata . "كُمْ";
+            $anti = $kata . "كِ";
+            $antunna = $kata . "كُنَّ";
+            $ana = $kata . "نِيْ";
+            $nahnu = $kata . "نَا";
+
+            $data[0] = $huwa;
+            $data[1] = $huma;
+            $data[2] = $hum;
+            $data[3] = $hiya;
+            $data[4] = $hunna;
+            $data[5] = $anta;
+            $data[6] = $antuma;
+            $data[7] = $antum;
+            $data[8] = $anti;
+            $data[9] = $antunna;
+            $data[10] = $ana;
+            $data[11] = $nahnu;
+
+            return $data;
+        }
+
+        public function huruf_dhomir_muttashil_maful($kata){
+            $huwa = $kata . "هُ";
+            $huma = $kata . "هُمَا";
+            $hum = $kata . "هُمْ";
+            $hiya = $kata . "هَا";
+            $hunna = $kata . "هُنَّ";
+            $anta = $kata . "كَ";
+            $antuma = $kata . "كُمَا";
+            $antum = $kata . "كُمْ";
+            $anti = $kata . "كِ";
+            $antunna = $kata . "كُنَّ";
+            $ana = $kata . "نِيْ";
+            $nahnu = $kata . "نَا";
+            
+
+            $data = $huwa . " " . $huma . " " . $hum . " " . $hiya . " " . $huma . " " . $hunna . " " . $anta . " " . $antuma . " " . $antum . " " . $anti . " " . $antunna . " " . $ana . " " . $nahnu;
+
+            return $data;
+        }
+
+        public function fiil_madhi(){
+            $data = [
+                $this->kata_fiil_madhi("1", "هُوَ + ضَرَبَ", "ضَرَبَ", "ضَرَبَ"),
+                $this->kata_fiil_madhi("1", "هُمَا (مذكر) + ضَرَبَ", "ضَرَبَ", "ضَرَبَا"),
+                $this->kata_fiil_madhi("1", "هُمْ + ضَرَبَ", "ضَرَبَ", "ضَرَبُوْا"),
+                $this->kata_fiil_madhi("1", "هِيَ + ضَرَبَ", "ضَرَبَ", "ضَرَبَتْ"),
+                $this->kata_fiil_madhi("1", "هُمَا (مؤنث) + ضَرَبَ", "ضَرَبَ", "ضَرَبَتَا"),
+                $this->kata_fiil_madhi("1", "هُنَّ + ضَرَبَ", "ضَرَبَ", "ضَرَبْنَ"),
+                $this->kata_fiil_madhi("1", "أَنْتَ + ضَرَبَ", "ضَرَبَ", "ضَرَبْتَ"),
+                $this->kata_fiil_madhi("1", "أَنْتُمَا + ضَرَبَ", "ضَرَبَ", "ضَرَبْتُمَا"),
+                $this->kata_fiil_madhi("1", "أَنْتُمْ + ضَرَبَ", "ضَرَبَ", "ضَرَبْتُمْ"),
+                $this->kata_fiil_madhi("1", "أَنْتِ + ضَرَبَ", "ضَرَبَ", "ضَرَبْتِ"),
+                $this->kata_fiil_madhi("1", "أَنْتُنَّ + ضَرَبَ", "ضَرَبَ", "ضَرَبْتُنَّ"),
+                $this->kata_fiil_madhi("1", "أَنَا + ضَرَبَ", "ضَرَبَ", "ضَرَبْتُ"),
+                $this->kata_fiil_madhi("1", "نَحْنُ + ضَرَبَ", "ضَرَبَ", "ضَرَبْنَا"),
+
+                
+                $this->kata_fiil_madhi("2", "هُوَ + رَكِبَ", "رَكِبَ", "رَكِبَ"),
+                $this->kata_fiil_madhi("2", "هُمَا (مذكر) + رَكِبَ", "رَكِبَ", "رَكِبَا"),
+                $this->kata_fiil_madhi("2", "هُمْ + رَكِبَ", "رَكِبَ", "رَكِبُوْا"),
+                $this->kata_fiil_madhi("2", "هِيَ + رَكِبَ", "رَكِبَ", "رَكِبَتْ"),
+                $this->kata_fiil_madhi("2", "هُمَا (مؤنث) + رَكِبَ", "رَكِبَ", "رَكِبَتَا"),
+                $this->kata_fiil_madhi("2", "هُنَّ + رَكِبَ", "رَكِبَ", "رَكِبْنَ"),
+                $this->kata_fiil_madhi("2", "أَنْتَ + رَكِبَ", "رَكِبَ", "رَكِبْتَ"),
+                $this->kata_fiil_madhi("2", "أَنْتُمَا + رَكِبَ", "رَكِبَ", "رَكِبْتُمَا"),
+                $this->kata_fiil_madhi("2", "أَنْتُمْ + رَكِبَ", "رَكِبَ", "رَكِبْتُمْ"),
+                $this->kata_fiil_madhi("2", "أَنْتِ + رَكِبَ", "رَكِبَ", "رَكِبْتِ"),
+                $this->kata_fiil_madhi("2", "أَنْتُنَّ + رَكِبَ", "رَكِبَ", "رَكِبْتُنَّ"),
+                $this->kata_fiil_madhi("2", "أَنَا + رَكِبَ", "رَكِبَ", "رَكِبْتُ"),
+                $this->kata_fiil_madhi("2", "نَحْنُ + رَكِبَ", "رَكِبَ", "رَكِبْنَا"),
+                
+                $this->kata_fiil_madhi("3", "هُوَ + دَخَلَ", "دَخَلَ", "دَخَلَ"),
+                $this->kata_fiil_madhi("3", "هُمَا (مذكر) + دَخَلَ", "دَخَلَ", "دَخَلَا"),
+                $this->kata_fiil_madhi("3", "هُمْ + دَخَلَ", "دَخَلَ", "دَخَلُوْا"),
+                $this->kata_fiil_madhi("3", "هِيَ + دَخَلَ", "دَخَلَ", "دَخَلَتْ"),
+                $this->kata_fiil_madhi("3", "هُمَا (مؤنث) + دَخَلَ", "دَخَلَ", "دَخَلَتَا"),
+                $this->kata_fiil_madhi("3", "هُنَّ + دَخَلَ", "دَخَلَ", "دَخَلْنَ"),
+                $this->kata_fiil_madhi("3", "أَنْتَ + دَخَلَ", "دَخَلَ", "دَخَلْتَ"),
+                $this->kata_fiil_madhi("3", "أَنْتُمَا + دَخَلَ", "دَخَلَ", "دَخَلْتُمَا"),
+                $this->kata_fiil_madhi("3", "أَنْتُمْ + دَخَلَ", "دَخَلَ", "دَخَلْتُمْ"),
+                $this->kata_fiil_madhi("3", "أَنْتِ + دَخَلَ", "دَخَلَ", "دَخَلْتِ"),
+                $this->kata_fiil_madhi("3", "أَنْتُنَّ + دَخَلَ", "دَخَلَ", "دَخَلْتُنَّ"),
+                $this->kata_fiil_madhi("3", "أَنَا + دَخَلَ", "دَخَلَ", "دَخَلْتُ"),
+                $this->kata_fiil_madhi("3", "نَحْنُ + دَخَلَ", "دَخَلَ", "دَخَلْنَا"),
+            ];
+
+            return $data;
+        }
+
+        public function kata_fiil_madhi($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_madhi($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_fiil_madhi($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function kata_madhi($kata){
+            $huwa = $kata;
+            $huma_l = $kata . "ا";
+            $hum = substr($kata, 0, -2) . "ُوْا";
+
+            $hiya = $kata . "تْ";
+            $huma_p = $kata . "تَا";
+            $hunna = substr($kata, 0, -2) . "ْنَ";
+
+            $anta = substr($kata, 0, -2) . "ْتَ";
+            $antuma = substr($kata, 0, -2) . "ْتُمَا";
+            $antum = substr($kata, 0, -2) . "ْتُمْ";
+
+            $anti = substr($kata, 0, -2) . "ْتِ";
+            $antunna = substr($kata, 0, -2) . "ْتُنَّ";
+
+            $ana = substr($kata, 0, -2) . "ْتُ";
+            $nahnu = substr($kata, 0, -2) . "ْنَا";
+
+            $data[0] = $huwa;
+            $data[1] = $huma_l;
+            $data[2] = $hum;
+            $data[3] = $hiya;
+            $data[4] = $huma_p;
+            $data[5] = $hunna;
+            $data[6] = $anta;
+            $data[7] = $antuma;
+            $data[8] = $antum;
+            $data[9] = $anti;
+            $data[10] = $antunna;
+            $data[11] = $ana;
+            $data[12] = $nahnu;
+
+            return $data;
+        }
+
+        public function huruf_fiil_madhi($kata){
+            $huwa = $kata;
+            $huma_l = $kata . "ا";
+            $hum = substr($kata, 0, -2) . "ُوْا";
+
+            $hiya = $kata . "تْ";
+            $huma_p = $kata . "تَا";
+            $hunna = substr($kata, 0, -2) . "ْنَ";
+
+            $anta = substr($kata, 0, -2) . "ْتَ";
+            $antuma = substr($kata, 0, -2) . "ْتُمَا";
+            $antum = substr($kata, 0, -2) . "ْتُمْ";
+
+            $anti = substr($kata, 0, -2) . "ْتِ";
+            $antunna = substr($kata, 0, -2) . "ْتُنَّ";
+
+            $ana = substr($kata, 0, -2) . "ْتُ";
+            $nahnu = substr($kata, 0, -2) . "ْنَا";
+
+            $data = $huwa . " " . $huma_l . " " . $hum . " " . $hiya . " " . $huma_p . " " . $hunna . " " . $anta . " " . $antuma . " " . $antum . " " . $anti . " " . $antunna . " " . $ana . " " . $nahnu;
+
+            return $data;
+        }
+        
+        public function fiil_mudhori(){
+            $data = [
+                $this->kata_fiil_mudhori("1", "هُوَ + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبُ"),
+                $this->kata_fiil_mudhori("1", "هُمَا (مذكر) + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبَانِ"),
+                $this->kata_fiil_mudhori("1", "هُمْ + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبُوْنَ"),
+                $this->kata_fiil_mudhori("1", "هِيَ + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبُ"),
+                $this->kata_fiil_mudhori("1", "هُمَا (مؤنث) + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبَانِ"),
+                $this->kata_fiil_mudhori("1", "هُنَّ + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبْنَ"),
+                $this->kata_fiil_mudhori("1", "أَنْتَ + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبُ"),
+                $this->kata_fiil_mudhori("1", "أَنْتُمَا + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبَانِ"),
+                $this->kata_fiil_mudhori("1", "أَنْتُمْ + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبُوْنَ"),
+                $this->kata_fiil_mudhori("1", "أَنْتِ + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبِيْنَ"),
+                $this->kata_fiil_mudhori("1", "أَنْتُنَّ + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبْنَ"),
+                $this->kata_fiil_mudhori("1", "أَنَا + يَضْرِبُ", "يَضْرِبُ", "أَضْرِبُ"),
+                $this->kata_fiil_mudhori("1", "نَحْنُ + يَضْرِبُ", "يَضْرِبُ", "نَضْرِبُ"),
+                
+                $this->kata_fiil_mudhori("2", "هُوَ + يَنْصَحُ", "يَنْصَحُ", "يَنْصَحُ"),
+                $this->kata_fiil_mudhori("2", "هُمَا (مذكر) + يَنْصَحُ", "يَنْصَحُ", "يَنْصَحَانِ"),
+                $this->kata_fiil_mudhori("2", "هُمْ + يَنْصَحُ", "يَنْصَحُ", "يَنْصَحُوْنَ"),
+                $this->kata_fiil_mudhori("2", "هِيَ + يَنْصَحُ", "يَنْصَحُ", "تَنْصَحُ"),
+                $this->kata_fiil_mudhori("2", "هُمَا (مؤنث) + يَنْصَحُ", "يَنْصَحُ", "تَنْصَحَانِ"),
+                $this->kata_fiil_mudhori("2", "هُنَّ + يَنْصَحُ", "يَنْصَحُ", "يَنْصَحْنَ"),
+                $this->kata_fiil_mudhori("2", "أَنْتَ + يَنْصَحُ", "يَنْصَحُ", "تَنْصَحُ"),
+                $this->kata_fiil_mudhori("2", "أَنْتُمَا + يَنْصَحُ", "يَنْصَحُ", "تَنْصَحَانِ"),
+                $this->kata_fiil_mudhori("2", "أَنْتُمْ + يَنْصَحُ", "يَنْصَحُ", "تَنْصَحُوْنَ"),
+                $this->kata_fiil_mudhori("2", "أَنْتِ + يَنْصَحُ", "يَنْصَحُ", "تَنْصَحِيْنَ"),
+                $this->kata_fiil_mudhori("2", "أَنْتُنَّ + يَنْصَحُ", "يَنْصَحُ", "تَنْصَحْنَ"),
+                $this->kata_fiil_mudhori("2", "أَنَا + يَنْصَحُ", "يَنْصَحُ", "أَنْصَحُ"),
+                $this->kata_fiil_mudhori("2", "نَحْنُ + يَنْصَحُ", "يَنْصَحُ", "نَنْصَحُ"),
+                
+                $this->kata_fiil_mudhori("3", "هُوَ + يَضْحَكُ", "يَضْحَكُ", "يَضْحَكُ"),
+                $this->kata_fiil_mudhori("3", "هُمَا (مذكر) + يَضْحَكُ", "يَضْحَكُ", "يَضْحَكَانِ"),
+                $this->kata_fiil_mudhori("3", "هُمْ + يَضْحَكُ", "يَضْحَكُ", "يَضْحَكُوْنَ"),
+                $this->kata_fiil_mudhori("3", "هِيَ + يَضْحَكُ", "يَضْحَكُ", "تَضْحَكُ"),
+                $this->kata_fiil_mudhori("3", "هُمَا (مؤنث) + يَضْحَكُ", "يَضْحَكُ", "تَضْحَكَانِ"),
+                $this->kata_fiil_mudhori("3", "هُنَّ + يَضْحَكُ", "يَضْحَكُ", "يَضْحَكْنَ"),
+                $this->kata_fiil_mudhori("3", "أَنْتَ + يَضْحَكُ", "يَضْحَكُ", "تَضْحَكُ"),
+                $this->kata_fiil_mudhori("3", "أَنْتُمَا + يَضْحَكُ", "يَضْحَكُ", "تَضْحَكَانِ"),
+                $this->kata_fiil_mudhori("3", "أَنْتُمْ + يَضْحَكُ", "يَضْحَكُ", "تَضْحَكُوْنَ"),
+                $this->kata_fiil_mudhori("3", "أَنْتِ + يَضْحَكُ", "يَضْحَكُ", "تَضْحَكِيْنَ"),
+                $this->kata_fiil_mudhori("3", "أَنْتُنَّ + يَضْحَكُ", "يَضْحَكُ", "تَضْحَكْنَ"),
+                $this->kata_fiil_mudhori("3", "أَنَا + يَضْحَكُ", "يَضْحَكُ", "أَضْحَكُ"),
+                $this->kata_fiil_mudhori("3", "نَحْنُ + يَضْحَكُ", "يَضْحَكُ", "نَضْحَكُ"),
+            ];
+
+            return $data;
+        }
+
+        public function kata_fiil_mudhori($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_mudhori($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_fiil_mudhori($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function kata_mudhori($kata){
+            $huwa = $kata;
+            $huma_l = substr($kata, 0, -2) . "َانِ";
+            $hum = substr($kata, 0, -2) . "ُوْنَ";
+            $hiya = "تَ" . substr($kata, 4);
+            $huma_p = "تَ" . substr($kata, 4, -2) . "َانِ";
+            $hunna = substr($kata, 0, -2) . "ْنَ";
+            $anta = "تَ" . substr($kata, 4);
+            $antuma = "تَ" . substr($kata, 4, -2) . "َانِ";
+            $antum = "تَ" . substr($kata, 4, -2) . "ُوْنَ";
+            $anti = "تَ" . substr($kata, 4, -2) . "ِيْنَ";
+            $antunna = "تَ" . substr($kata, 4, -2) . "ْنَ";
+            $ana = "أَ" . substr($kata, 4);
+            $nahnu = "نَ" . substr($kata, 4);
+
+            $data[0] = $huwa;
+            $data[1] = $huma_l;
+            $data[2] = $hum;
+            $data[3] = $hiya;
+            $data[4] = $huma_p;
+            $data[5] = $hunna;
+            $data[6] = $anta;
+            $data[7] = $antuma;
+            $data[8] = $antum;
+            $data[9] = $anti;
+            $data[10] = $antunna;
+            $data[11] = $ana;
+            $data[12] = $nahnu;
+
+            return $data;
+        }
+
+        public function huruf_fiil_mudhori($kata){
+            $huwa = $kata;
+            $huma_l = substr($kata, 0, -2) . "َانِ";
+            $hum = substr($kata, 0, -2) . "ُوْنَ";
+            $hiya = "تَ" . substr($kata, 4);
+            $huma_p = "تَ" . substr($kata, 4, -2) . "َانِ";
+            $hunna = substr($kata, 0, -2) . "ْنَ";
+            $anta = "تَ" . substr($kata, 4);
+            $antuma = "تَ" . substr($kata, 4, -2) . "َانِ";
+            $antum = "تَ" . substr($kata, 4, -2) . "ُوْنَ";
+            $anti = "تَ" . substr($kata, 4, -2) . "ِيْنَ";
+            $antunna = "تَ" . substr($kata, 4, -2) . "ْنَ";
+            $ana = "أَ" . substr($kata, 4);
+            $nahnu = "نَ" . substr($kata, 4);
+
+            $data = $huwa . " " . $huma_l . " " . $hum . " " . $hiya . " " . $huma_p . " " . $hunna . " " . $anta . " " . $antuma . " " . $antum . " " . $anti . " " . $antunna . " " . $ana . " " . $nahnu;
+
+            return $data;
+        }
+        
+        public function fiil_amr(){
+            $data = [
+                $this->kata_fiil_amr("1", "أَنْتَ + اُسْكُتْ", "اُسْكُتْ", "اُسْكُتْ"),
+                $this->kata_fiil_amr("1", "أَنْتُمَا + اُسْكُتْ", "اُسْكُتْ", "اُسْكُتَا"),
+                $this->kata_fiil_amr("1", "أَنْتُمْ + اُسْكُتْ", "اُسْكُتْ", "اُسْكُتُوْا"),
+                $this->kata_fiil_amr("1", "أَنْتِ + اُسْكُتْ", "اُسْكُتْ", "اُسْكُتِيْ"),
+                $this->kata_fiil_amr("1", "أَنْتُنَّ + اُسْكُتْ", "اُسْكُتْ", "اُسْكُتْنَ"),
+                
+                $this->kata_fiil_amr("2", "أَنْتَ + اِضْحَكْ", "اِضْحَكْ", "اِضْحَكْ"),
+                $this->kata_fiil_amr("2", "أَنْتُمَا + اِضْحَكْ", "اِضْحَكْ", "اِضْحَكَا"),
+                $this->kata_fiil_amr("2", "أَنْتُمْ + اِضْحَكْ", "اِضْحَكْ", "اِضْحَكُوْا"),
+                $this->kata_fiil_amr("2", "أَنْتِ + اِضْحَكْ", "اِضْحَكْ", "اِضْحَكِيْ"),
+                $this->kata_fiil_amr("2", "أَنْتُنَّ + اِضْحَكْ", "اِضْحَكْ", "اِضْحَكْنَ"),
+                
+                $this->kata_fiil_amr("3", "أَنْتَ + اُخْرُجْ", "اُخْرُجْ", "اُخْرُجْ"),
+                $this->kata_fiil_amr("3", "أَنْتُمَا + اُخْرُجْ", "اُخْرُجْ", "اُخْرُجَا"),
+                $this->kata_fiil_amr("3", "أَنْتُمْ + اُخْرُجْ", "اُخْرُجْ", "اُخْرُجُوْا"),
+                $this->kata_fiil_amr("3", "أَنْتِ + اُخْرُجْ", "اُخْرُجْ", "اُخْرُجِيْ"),
+                $this->kata_fiil_amr("3", "أَنْتُنَّ + اُخْرُجْ", "اُخْرُجْ", "اُخْرُجْنَ"),
+            ];
+
+            return $data;
+        }
+
+        public function kata_fiil_amr($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_amr($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_fiil_amr($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function kata_amr($kata){
+            $anta = $kata;
+            $antuma = substr($kata, 0, -2) . "َا";
+            $antum = substr($kata, 0, -2) . "ُوْا";
+            $anti = substr($kata, 0, -2) . "ِيْ";
+            $antunna = substr($kata, 0, -2) . "ْنَ";
+
+            $data[0] = $anta;
+            $data[1] = $antuma;
+            $data[2] = $antum;
+            $data[3] = $anti;
+            $data[4] = $antunna;
+
+            return $data;
+        }
+
+        public function huruf_fiil_amr($kata){
+            $anta = $kata;
+            $antuma = substr($kata, 0, -2) . "َا";
+            $antum = substr($kata, 0, -2) . "ُوْا";
+            $anti = substr($kata, 0, -2) . "ِيْ";
+            $antunna = substr($kata, 0, -2) . "ْنَ";
+
+            $data = $anta . " " . $antuma . " " . $antum . " " . $anti . " " . $antunna;
+
+            return $data;
+        }
+        
+        public function jar_majrur(){
+            $data = [
+                $this->kata_jar_majrur("1", "Dengan Pulpen", "بِالْقَلَمِ", "بِالْقَلَمِ"),
+                $this->kata_jar_majrur("1", "Di dalam kamar", "فِى الْغُرْفَةِ", "فِى الْغُرْفَةِ"),
+                $this->kata_jar_majrur("1", "Dari kamar mandi", "مِنْ الْحَمَّامِ", "مِنْ الْحَمَّامِ"),
+                $this->kata_jar_majrur("1", "Ke sekolah", "اِلَى الْمَدْرَسَةِ", "اِلَى الْمَدْرَسَةِ"),
+                $this->kata_jar_majrur("1", "Seperti pondok", "كَالْمَعْهَدِ", "كَالْمَعْهَدِ"),
+                $this->kata_jar_majrur("1", "Untuk guru", "لِلْمُدَرِّسِ", "لِلْمُدَرِّسِ"),
+                $this->kata_jar_majrur("1", "Di atas kasur", "عَلَى الْفِرَاشِ", "عَلَى الْفِرَاشِ"),
+                $this->kata_jar_majrur("1", "Sampai subuh", "حَتَّى الصُّبْحِ", "حَتَّى الصُّبْحِ"),
+            ];
+
+            return $data;
+        }
+
+        public function dhorof_madhruf(){
+            $data = [
+                $this->kata_jar_majrur("1", "Di depan masjid", "أَمَامَ الْمَسْجِدِ", "أَمَامَ الْمَسْجِدِ"),
+                $this->kata_jar_majrur("1", "Di belakang tembok", "وَرَاءَ الْجِدَارِ", "وَرَاءَ الْجِدَارِ"),
+                $this->kata_jar_majrur("1", "Di bawah meja", "تَحْتَ الْمَكْتَبِ", "تَحْتَ الْمَكْتَبِ"),
+                $this->kata_jar_majrur("1", "Di samping warung", "جَانِبَ الْحَانُوْتِ", "جَانِبَ الْحَانُوْتِ"),
+                $this->kata_jar_majrur("1", "Sebelum subuh", "قَبْلَ الصُّبْحِ", "قَبْلَ الصُّبْحِ"),
+                $this->kata_jar_majrur("1", "Setelah pelajaran", "بَعْدَ الدِّرَاسَةِ", "بَعْدَ الدِّرَاسَةِ"),
+                $this->kata_jar_majrur("1", "Bersama teman-teman", "مَعَ الْأَصْدِقَاءِ", "مَعَ الْأَصْدِقَاءِ"),
+            ];
+
+            return $data;
+        }
+
+        public function kata_jar_majrur($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_jar($kata),
+                "huruf" => array_unique($this->huruf($this->huruf_kata_jar($kata), " ")),
+            ];
+
+            return $data;
+        }
+
+        public function kata_jar($kata){
+            $data[0] = substr($kata, 0, -2) . "ُ";
+            $data[1] = substr($kata, 0, -2) . "َ";
+            $data[2] = substr($kata, 0, -2) . "ِ";
+
+            return $data;
+        }
+
+        public function huruf_kata_jar($kata){
+            $data[0] = substr($kata, 0, -2) . "ُ";
+            $data[1] = substr($kata, 0, -2) . "َ";
+            $data[2] = substr($kata, 0, -2) . "ِ";
+
+            return $data[0] . " " . $data[1] . " " . $data[2];
+        }
+
+        
+        public function mausuf_sifat(){
+            $data = [
+                $this->kata_mausuf_sifat("1", "مَرْأَةٌ", "صَالِحٌ", "صَالِحَةٌ"),
+                $this->kata_mausuf_sifat("1", "مَسْجِدٌ", "كَبِيْرٌ", "كَبِيْرٌ"),
+                $this->kata_mausuf_sifat("1", "نَافِذَةٌ", "جَدِيْدٌ", "جَدِيْدَةٌ"),
+                $this->kata_mausuf_sifat("1", "طَالِبٌ", "ذَكِيٌّ", "ذَكِيٌّ"),
+                $this->kata_mausuf_sifat("1", "حَقِيْبَةٌ", "قَبِيْحٌ", "قَبِيْحَةٌ"),
+                $this->kata_mausuf_sifat("1", "خِزَانَةٌ", "طَوِيْلٌ", "طَوِيْلَةٌ"),
+                $this->kata_mausuf_sifat("1", "بَوَّابَةٌ", "مَفْتُوْحٌ", "مَفْتُوْحَةٌ"),
+                $this->kata_mausuf_sifat("1", "مَكْتَبٌ", "نَظِيْفٌ", "نَظِيْفٌ"),
+                $this->kata_mausuf_sifat("1", "كِتَابٌ", "رَخِيْصٌ", "رَخِيْصٌ"),
+                
+                
+                
+                
+                
+                
+                
+            ];
+
+            return $data;
+        }
+
+        public function kata_mausuf_sifat($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_mausuf($kata),
+                "huruf" => "",
+            ];
+
+            return $data;
+        }
+
+        public function kata_mausuf($kata){
+            $data[0] = $kata;
+            $data[1] = substr($kata, 0, -2) . "َةٌ";
 
             return $data;
         }

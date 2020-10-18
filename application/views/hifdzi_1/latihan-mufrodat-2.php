@@ -116,7 +116,7 @@
     $("#backHome").click(function(){
         Swal.fire({
             icon: 'question',
-            text: 'pekerjaan Anda tidak akan tersimpan, yakin akan keluar?',
+            text: 'yakin akan keluar dari latihan?',
             showCloseButton: true,
             showCancelButton: true,
             confirmButtonText: '<a href="<?= base_url($redirect)?>">Ya</a>',

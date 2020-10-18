@@ -79,6 +79,14 @@
                     </a>
                 </div>
             <?php endif;?>
+            <?php if(in_array("Full Time 2", $program)):?>
+                <a href="#" class="list-group-item list-group-item-action <?php if($title == 'Full Time 2'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>" id="btnMateriFullTime2"><i class="fa fa-book mr-3"></i>Materi Full Time 2</a>
+                <div class="MateriFullTime2">
+                    <a href="<?= base_url()?>ft_2/mufrodat" class="list-group-item list-group-item-action">
+                        <span class="ml-4">Mufrodat</span> 
+                    </a>
+                </div>
+            <?php endif;?>
             <a href="<?= base_url()?>setting" class="list-group-item list-group-item-action <?php if($title == 'Pengaturan'){echo 'bg-primary text-light';}else{echo 'bg-light text-dark';}?>"><i class="fa fa-cog mr-3"></i>Pengaturan</a>
             <a href="<?= base_url()?>login/logout_user" class="list-group-item list-group-item-action" onclick="return confirm('Yakin akan keluar?')"><i class="fa fa-sign-out-alt mr-3"></i>Logout</a>
         </div>
@@ -94,8 +102,13 @@
 
 <script>
     $(".MateriFullTime1").hide();
+    $(".MateriFullTime2").hide();
       
     $('#btnMateriFullTime1').on('click', function() {
         $('.MateriFullTime1').fadeToggle(300);
+    });
+    
+    $('#btnMateriFullTime2').on('click', function() {
+        $('.MateriFullTime2').fadeToggle(300);
     });
 </script>

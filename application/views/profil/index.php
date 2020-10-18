@@ -44,6 +44,8 @@
                                     <span><?= $kelas['nama_kelas']?></span>
                                     <?php if($kelas['program'] == "Full Time 1"):?>
                                         <span><a href="#daftarIsi" data-toggle="modal" data-id="<?= $kelas['nama_kelas'] . "|" . $kelas['program']?>" class="btn btn-sm btn-info img-shadow btnMulai">materi</a></span>
+                                    <?php elseif($kelas['program'] == "Full Time 2"):?>
+                                        <span><a href="#daftarIsi" data-toggle="modal" data-id="<?= $kelas['nama_kelas'] . "|" . $kelas['program']?>" class="btn btn-sm btn-info img-shadow btnMulai">materi</a></span>
                                     <?php else :?>
                                         <span><a href="<?= base_url()?>materi/program/<?= MD5($kelas['program'])?>" class="btn btn-sm btn-info img-shadow">mulai</a></span>
                                     <?php endif;?>
@@ -73,6 +75,10 @@
                 <li class="list list-group-item d-flex justify-content-between">1. Mufrodat Full Time 1 <span><a href="<?= base_url()?>ft_1/mufrodat" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
                 <li class="list list-group-item d-flex justify-content-between">2. Qowaid Full Time 1 <span><a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
                 <li class="list list-group-item d-flex justify-content-between">3. Ibarah Jilid 1 <span><a href="<?= base_url()?>ibarah/awwal" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
+            `;
+        } else if(data[1] == "Full Time 2"){
+            html = `
+                <li class="list list-group-item d-flex justify-content-between">1. Mufrodat Full Time 2 <span><a href="<?= base_url()?>ft_2/mufrodat" class="btn btn-sm btn-info img-shadow">mulai</a></span></li>
             `;
         }
 

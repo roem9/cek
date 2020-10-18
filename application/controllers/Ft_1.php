@@ -82,9 +82,9 @@ class Ft_1 extends CI_CONTROLLER{
                 foreach ($kata as $i => $kata) {
                     if(in_array($kata['id'], $_POST['data'])){
                         if($urut == 1){
-                            if($kata['status'] == "on"){
+                            // if($kata['status'] == "on"){
                                 $data['mufrodat'][$i] = $kata;
-                            }
+                            // }
                         } else {
                             $data['mufrodat'][$i] = $kata;
                         }
@@ -109,7 +109,8 @@ class Ft_1 extends CI_CONTROLLER{
                 foreach ($data['mufrodat'] as $i => $kata) {
                     if($urut == 1){
                         $data['title'] = "Latihan 1";
-                        $data['kata'][$i] = $kata['kata_arab'];
+                        $data['kata'][$i]['arab'] = $kata['kata_arab'];
+                        $data['kata'][$i]['arti'] = $kata['arti'];
                     }
                     elseif($urut == 2){
                         $data['title'] = "Latihan 2";
@@ -190,26 +191,74 @@ class Ft_1 extends CI_CONTROLLER{
                 $this->load->view("templates/header-user", $data);
                 $this->load->view("ft_1/qowaid/mudzakkar_muannats_salim", $data);
                 $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Jamak Taksir")){
+                $data['title'] = "Jamak Taksir";
+                
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/jamak_taksir", $data);
+                $this->load->view("templates/footer-user", $data);
             } else if($_GET['id'] == MD5("Dhomir Munfashil")){
                 $data['title'] = "Dhomir Munfashil";
                 
                 $data['mufrodat'] = $this->Ft1_model->dhomir_munfashil();
                 $this->load->view("templates/header-user", $data);
-                $this->load->view("ft_1/qowaid/materi-hafalan", $data);
+                $this->load->view("ft_1/qowaid/dhomir_munfashil", $data);
                 $this->load->view("templates/footer-user", $data);
             } else if($_GET['id'] == MD5("Dhomir Muttashil")){
                 $data['title'] = "Dhomir Muttashil";
                 
                 $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
                 $this->load->view("templates/header-user", $data);
-                $this->load->view("ft_1/qowaid/materi-hafalan", $data);
+                $this->load->view("ft_1/qowaid/dhomir_muttashil", $data);
                 $this->load->view("templates/footer-user", $data);
-            } else if($_GET['id'] == MD5("Dhomir Muttashil Milki")){
-                $data['title'] = "Dhomir Muttashil (Kepemilikan)";
-
+            } else if($_GET['id'] == MD5("Fiil Madhi")){
+                $data['title'] = "Fiil Madhi";
+                
                 $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
                 $this->load->view("templates/header-user", $data);
-                $this->load->view("ft_1/qowaid/dhomir_muttashil_milki", $data);
+                $this->load->view("ft_1/qowaid/fiil_madhi", $data);
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Fiil Mudhori")){
+                $data['title'] = "Fiil Mudhori";
+                
+                $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/fiil_mudhori", $data);
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Fiil Amr")){
+                $data['title'] = "Fiil Amr";
+                
+                $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/fiil_amr", $data);
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Huruf")){
+                $data['title'] = "Huruf";
+                
+                $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/huruf", $data);
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Jar Majrur")){
+                $data['title'] = "Jar Majrur";
+                
+                $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/jar_majrur", $data);
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Dhorof Madhruf")){
+                $data['title'] = "Dhorof Madhruf";
+                
+                $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/dhorof_madhruf", $data);
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['id'] == MD5("Mausuf Sifat")){
+                $data['title'] = "Mausuf Sifat";
+                
+                $data['mufrodat'] = $this->Ft1_model->dhomir_muttashil();
+                $this->load->view("templates/header-user", $data);
+                $this->load->view("ft_1/qowaid/mausuf_sifat", $data);
                 $this->load->view("templates/footer-user", $data);
             }
         } else if(!empty($_GET['ln'])){
@@ -360,7 +409,7 @@ class Ft_1 extends CI_CONTROLLER{
                 $latihan = $_GET['j'];
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->dhomir_muttashil_milki();
-                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Dhomir Muttashil Milki");
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Dhomir Muttashil");
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -383,6 +432,180 @@ class Ft_1 extends CI_CONTROLLER{
 
                 $this->load->view("templates/footer-user", $data);
             
+            } else if($_GET['ln'] == MD5("Dhomir Muttashil Maful")){
+                $urut = $_GET['i'];
+                $latihan = $_GET['j'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->dhomir_muttashil_maful();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Dhomir Muttashil");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                if($latihan == 1){
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
+                } else {
+                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                }
+
+                $this->load->view("templates/footer-user", $data);
+            
+            } else if($_GET['ln'] == MD5("Fiil Madhi")){
+                $urut = $_GET['i'];
+                $latihan = $_GET['j'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->fiil_madhi();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Fiil Madhi");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                if($latihan == 1){
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
+                } else {
+                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                }
+
+                $this->load->view("templates/footer-user", $data);
+            
+            } else if($_GET['ln'] == MD5("Fiil Mudhori")){
+                $urut = $_GET['i'];
+                $latihan = $_GET['j'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->fiil_mudhori();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Fiil Mudhori");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                if($latihan == 1){
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
+                } else {
+                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                }
+
+                $this->load->view("templates/footer-user", $data);
+            
+            } else if($_GET['ln'] == MD5("Fiil Amr")){
+                $urut = $_GET['i'];
+                $latihan = $_GET['j'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->fiil_amr();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Fiil Amr");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                if($latihan == 1){
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
+                } else {
+                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                }
+
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['ln'] == MD5("Jar Majrur")){
+                $urut = $_GET['i'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->jar_majrur();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Jar Majrur");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                $this->load->view("ft_1/qowaid/latihan/latihan-syibhul-jumlah-1", $data);
+
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['ln'] == MD5("Dhorof Madhruf")){
+                $urut = $_GET['i'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->dhorof_madhruf();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Dhorof Madhruf");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                $this->load->view("ft_1/qowaid/latihan/latihan-syibhul-jumlah-1", $data);
+
+                $this->load->view("templates/footer-user", $data);
+            } else if($_GET['ln'] == MD5("Mausuf Sifat")){
+                $urut = $_GET['i'];
+                $data['title'] = "Latihan " . $urut;
+                $kata = $this->Ft1_model->mausuf_sifat();
+                $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Mausuf Sifat");
+    
+                foreach ($kata as $i => $kata) {
+                    if($kata['latihan'] == $urut){
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }      
+                
+                // var_dump($data['mufrodat']);
+                // exit();
+
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                $data['pesan'] = "Pilihlah sifat yang sesuai dengan mausuf dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
+                $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
+
+                $this->load->view("templates/footer-user", $data);
             }
         } else {
 

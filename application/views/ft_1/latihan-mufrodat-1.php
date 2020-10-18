@@ -40,20 +40,19 @@
                                         <div class="container">
                                             <div class="row justify-content-center">
                                                 <?php 
-                                                    $choice[0] = $kalimat['kata_arab'] ;
+                                                    $choice[0] = $kalimat['kata_arab'];
                                                     $r = 1;
 
                                                     shuffle($kata);
 
                                                     foreach ($kata as $cek) {
-                                                        if($cek != $kalimat['kata_arab'] && $r <= 3){
-                                                            $choice[$r] = $cek;
+                                                        if($cek['arab'] != $kalimat['kata_arab'] && $r <= 3 && $cek['arti'] != $kalimat['arti']){
+                                                            $choice[$r] = $cek['arab'];
                                                             $r++;
                                                         }
                                                     }
                                                     array_unique($choice);
                                                     rsort($choice);
-                                                
                                                 ?>
                                                 <?php foreach ($choice as $k => $data) :?>
                                                     <!-- <div class="col"> -->
@@ -137,7 +136,7 @@
     $("#backHome").click(function(){
         Swal.fire({
             icon: 'question',
-            text: 'pekerjaan Anda tidak akan tersimpan, yakin akan keluar?',
+            text: 'yakin akan keluar dari latihan?',
             showCloseButton: true,
             showCancelButton: true,
             confirmButtonText: '<a href="<?= base_url($redirect)?>">Ya</a>',
