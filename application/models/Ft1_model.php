@@ -2002,7 +2002,6 @@
                 $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Jamak Mudzakkar Salim Objek)", "مُوَظَّفٌ", "مُوَظَّفِيْنَ"),
                 $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Jamak Muannats Salim Subjek)", "مُوَظَّفٌ", "مُوَظَّفَاتٌ"),
                 $this->kata_mudzakkar_muannats_salim("2", "مُوَظَّفٌ (Jamak Muannats Salim Objek)", "مُوَظَّفٌ", "مُوَظَّفَاتٍ"),
-
                 
                 $this->kata_mudzakkar_muannats_salim("3", "عَالِمٌ (Mufrod Muannats Subjek)", "عَالِمٌ", "عَالِمَةٌ"),
                 $this->kata_mudzakkar_muannats_salim("3", "عَالِمٌ (Jamak Mudzakkar Salim Subjek)", "عَالِمٌ", "عَالِمُوْنَ"),
@@ -2809,7 +2808,6 @@
 
             return $data[0] . " " . $data[1] . " " . $data[2];
         }
-
         
         public function mausuf_sifat(){
             $data = [
@@ -2822,13 +2820,6 @@
                 $this->kata_mausuf_sifat("1", "بَوَّابَةٌ", "مَفْتُوْحٌ", "مَفْتُوْحَةٌ"),
                 $this->kata_mausuf_sifat("1", "مَكْتَبٌ", "نَظِيْفٌ", "نَظِيْفٌ"),
                 $this->kata_mausuf_sifat("1", "كِتَابٌ", "رَخِيْصٌ", "رَخِيْصٌ"),
-                
-                
-                
-                
-                
-                
-                
             ];
 
             return $data;
@@ -2849,6 +2840,176 @@
         public function kata_mausuf($kata){
             $data[0] = $kata;
             $data[1] = substr($kata, 0, -2) . "َةٌ";
+
+            return $data;
+        }
+        
+        public function isyarah_musyar(){
+            $data = [
+                $this->kata_isyarah_musyar("1", "هَذَا", "بَابٌ الْبَابُ نَافِذَةٌ النَّافِذَةُ", "الْبَابُ"),
+                $this->kata_isyarah_musyar("1", "هَذِهِ", "بَابٌ الْبَابُ نَافِذَةٌ النَّافِذَةُ", "النَّافِذَةُ"),
+                $this->kata_isyarah_musyar("1", "ذَالِكَ", "بَابٌ الْبَابُ نَافِذَةٌ النَّافِذَةُ", "الْبَابُ"),
+                $this->kata_isyarah_musyar("1", "تِلْكَ", "بَابٌ الْبَابُ نَافِذَةٌ النَّافِذَةُ", "النَّافِذَةُ"),
+            ];
+
+            return $data;
+        }
+
+        public function kata_isyarah_musyar($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_musyar($kata),
+                "huruf" => "",
+            ];
+
+            return $data;
+        }
+
+        public function kata_musyar($kata){
+            $data = explode(" ", $kata);
+            return $data;
+        }
+
+        public function idhafah(){
+            $data = [
+                $this->kata_idhafah("1", "بَابٌ + فَصْلٌ", "بَابٌ فَصْلٌ", "بَابُ الْفَصْلِ", "qamariyah", "marifat"),
+                $this->kata_idhafah("1", "كِتَابٌ + أُسْتَاذٌ", "كِتَابٌ أُسْتَاذٌ", "كِتَابُ أُسْتَاذٍ", "qamariyah", ""),
+            ];
+
+            return $data;
+        }
+
+        public function kata_idhafah($latihan, $soal, $kata, $jawaban, $al, $marifat = ""){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->kata_idhaf($kata, $al, $marifat),
+                "huruf" => "",
+            ];
+
+            return $data;
+        }
+
+        public function kata_idhaf($kata, $al, $marifat){
+            $cek = explode(" ", $kata);
+            $data[] = $cek[0];
+            $data[] = substr($cek[0], 0, -2) . "ُ";
+            $data[] = $cek[1];
+            if($marifat){
+                if($al == "syamsiah"){
+                    $data[] = "ال" . substr($cek[1], 0, 2) . "ّ" . substr($cek[1], 0, -2) . "ُ";
+                    $data[] = "ال" . substr($cek[1], 0, 2) . "ّ" . substr($cek[1], 0, -2) . "ِ";
+                } else {
+                    $data[] = "الْ" . substr($cek[1], 0, -2) . "ُ";
+                    $data[] = "الْ" . substr($cek[1], 0, -2) . "ِ";
+                }
+            } else {
+                $data[] = substr($cek[1], 0, -2) . "ُ";
+                $data[] = substr($cek[1], 0, -2) . "ٍ";
+            }
+
+            return $data;
+        }
+
+        
+        public function mausul(){
+            $data = [
+                $this->mausul_fiil_madhi("1", "الَّذِيْ + ضَرَبَ", "ضَرَبَ", "ضَرَبَ"),
+                $this->mausul_fiil_madhi("1", "اللَّذَانِ + ضَرَبَ", "ضَرَبَ", "ضَرَبَا"),
+                $this->mausul_fiil_madhi("1", "الَّذِيْنَ + ضَرَبَ", "ضَرَبَ", "ضَرَبُوْا"),
+                $this->mausul_fiil_madhi("1", "الَّتَيْ + ضَرَبَ", "ضَرَبَ", "ضَرَبَتْ"),
+                $this->mausul_fiil_madhi("1", "اللَّتَانِ + ضَرَبَ", "ضَرَبَ", "ضَرَبَتَا"),
+                $this->mausul_fiil_madhi("1", "اللَّآتِيْ + ضَرَبَ", "ضَرَبَ", "ضَرَبْنَ"),
+
+                
+                $this->mausul_fiil_mudhori("2", "الَّذِيْ + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبُ"),
+                $this->mausul_fiil_mudhori("2", "اللَّذَانِ + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبَانِ"),
+                $this->mausul_fiil_mudhori("2", "الَّذِيْنَ + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبُوْنَ"),
+                $this->mausul_fiil_mudhori("2", "الَّتَيْ + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبُ"),
+                $this->mausul_fiil_mudhori("2", "اللَّتَانِ + يَضْرِبُ", "يَضْرِبُ", "تَضْرِبَانِ"),
+                $this->mausul_fiil_mudhori("2", "اللَّآتِيْ + يَضْرِبُ", "يَضْرِبُ", "يَضْرِبْنَ"),
+            ];
+            return $data;
+        }
+
+        public function mausul_fiil_madhi($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->mausul_kata_madhi($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_fiil_madhi($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function mausul_kata_madhi($kata){
+            $huwa = $kata;
+            $huma_l = $kata . "ا";
+            $hum = substr($kata, 0, -2) . "ُوْا";
+
+            $hiya = $kata . "تْ";
+            $huma_p = $kata . "تَا";
+            $hunna = substr($kata, 0, -2) . "ْنَ";
+
+            $data[] = $huwa;
+            $data[] = $huma_l;
+            $data[] = $hum;
+            $data[] = $hiya;
+            $data[] = $huma_p;
+            $data[] = $hunna;
+
+            return $data;
+        }
+
+        public function mausul_fiil_mudhori($latihan, $soal, $kata, $jawaban){
+            $data = [
+                "latihan" => $latihan,
+                "soal" => $soal,
+                "jawaban" => $jawaban,
+                "kata" => $this->mausul_kata_mudhori($kata),
+                "huruf" => array_unique(array_diff($this->huruf($this->huruf_fiil_mudhori($kata)), ["_"])),
+            ];
+
+            return $data;
+        }
+
+        public function mausul_kata_mudhori($kata){
+            $huwa = $kata;
+            $huma_l = substr($kata, 0, -2) . "َانِ";
+            $hum = substr($kata, 0, -2) . "ُوْنَ";
+            $hiya = "تَ" . substr($kata, 4);
+            $huma_p = "تَ" . substr($kata, 4, -2) . "َانِ";
+            $hunna = substr($kata, 0, -2) . "ْنَ";
+
+            $data[] = $huwa;
+            $data[] = $huma_l;
+            $data[] = $hum;
+            $data[] = $hiya;
+            $data[] = $huma_p;
+            $data[] = $hunna;
+
+            return $data;
+        }
+
+        public function nakirah_marifat(){
+            $data = [
+                $this->kata_mudzakkar_muannats("كِتَابٌ", "النَّكِرَةُ", "1"),
+                $this->kata_mudzakkar_muannats("الْقَلَمُ", "الْمَعْرِفَةُ", "1"),
+            ];
+
+            return $data;
+        }
+
+        public function jumlah(){
+            $data = [
+                $this->kata_mudzakkar_muannats("هُوَ طَالِبٌ", "جُمْلَةٌ اِسْمِيَّةٌ", "1"),
+                $this->kata_mudzakkar_muannats("قَامَ مُحَمَّدٌ", "جُمْلَةٌ فِعْلِيَّةٌ", "1"),
+            ];
 
             return $data;
         }

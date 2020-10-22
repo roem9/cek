@@ -16,6 +16,12 @@
                 <div class="col-12 mb-3">
                     <img src="<?= base_url()?>assets/img/qowaid_ft1/5.2.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
                 </div>
+                <div class="col-12 mb-3">
+                    <div class="d-flex justify-content-between">
+                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Jamak Taksir')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left"></i></a>
+                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Dhomir Muttashil')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
                 <div class="col-12">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-warning">Latihan</li>
@@ -23,13 +29,6 @@
                         <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= MD5("Dhomir Munfashil")?>&i=2" class="btn btn-sm btn-block btn-success">Latihan 2</a></li>
                         <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= MD5("Dhomir Munfashil")?>&i=3" class="btn btn-sm btn-block btn-success">Latihan 3</a></li>
                     </ul>
-                </div>
-                
-                <div class="col-12 mt-3">
-                    <div class="d-flex justify-content-between">
-                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Jamak Taksir')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left"></i></a>
-                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Dhomir Muttashil')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
-                    </div>
                 </div>
             </div>
         </div>

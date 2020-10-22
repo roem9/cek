@@ -45,6 +45,12 @@
                     <img src="<?= base_url()?>assets/img/qowaid_ft1/6.4.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
                 </div>
                 <div class="col-12 mb-3">
+                    <div class="d-flex justify-content-between">
+                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Dhomir Munfashil')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left"></i></a>
+                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Fiil Madhi')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-warning">Latihan Dhomir</li>
                         <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= MD5("Dhomir Muttashil")?>&i=1" class="btn btn-sm btn-block btn-success">Latihan 1</a></li>
@@ -69,13 +75,6 @@
                         <li class="list-group-item"><a href="#daftarIsi" data-toggle="modal" data-id="<?= base_url()?>ft_1/qowaid?ln=<?= MD5("Dhomir Muttashil Maful")?>&i=2" class="btn btn-sm btn-block btn-success btnMulai">Latihan 2</a></li>
                         <li class="list-group-item"><a href="#daftarIsi" data-toggle="modal" data-id="<?= base_url()?>ft_1/qowaid?ln=<?= MD5("Dhomir Muttashil Maful")?>&i=3" class="btn btn-sm btn-block btn-success btnMulai">Latihan 3</a></li>
                     </ul>
-                </div>
-                
-                <div class="col-12 mt-3">
-                    <div class="d-flex justify-content-between">
-                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Dhomir Munfashil')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left"></i></a>
-                        <a href="<?= base_url()?>/ft_1/qowaid?id=<?= MD5('Fiil Madhi')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
-                    </div>
                 </div>
             </div>
         </div>

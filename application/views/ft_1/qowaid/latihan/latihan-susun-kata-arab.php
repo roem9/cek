@@ -1,11 +1,10 @@
-        <div class="container">
+<div class="container">
             <div class="row">
                 <div class="col-12 col-md-12 mb-3">
-                    <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times mr-1"></i>keluar</a>
+                    <a id="backHome" class="btn btn-sm btn-danger text-light"><i class="fa fa-times"></i> keluar</a>
                 </div>
                 <div class="col-12 mb-1">
                     <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i><?= $pesan?></div>
-                    <!-- <div class="alert alert-warning"><i class="fa fa-exclamation-circle text-warning mr-1"></i>Tentukan jenis dari kata benda berikut ini, lalu pilih tombol <strong>pilih</strong> untuk menyimpan jawaban</div> -->
                 </div>
                 <div class="col-12">
                     <div class="form-group">
@@ -23,33 +22,38 @@
                 <?php 
                     $urut = 0;
                     foreach ($mufrodat as $i => $kalimat) :
-                    $urut++;?>
+                    $urut++?>
+    
                     <div class="col-12 col-md-12 mb-3">
                         <ul class="list-group">
                             <li class="list-group-item bg-cek-<?= $i?>">
                                 <div class="form-group">
-                                    <label for="<?=$i?>" id="container-content"><strong><?= $i+1?>. <?= $kalimat['kata_arab']?></strong></label>
-                                    <span class="icon-cek-<?= $i?>"></span>
+                                    <div class="">
+                                        <label for="<?=$i?>" id="container-content"><strong><?= $i+1?>. <?= $kalimat['soal']?></strong></label>
+                                        <span class="icon-cek-<?= $i?>"></span>
+                                    </div>
                                     <input type="hidden" name="kunci<?=$i?>" value="<?= $kalimat['jawaban']?>">
                                     <input type="hidden" name="j<?= $i?>" id="jawaban<?=$i?>">
                                     <div class="d-flex justify-content-between">
-                                        <a id="btnEdit<?=$i?>" class="btn btn-sm btn-success text-light edit" data-id="<?= $i?>" style="display: none">ganti</a>
+                                        <a id="btnEdit<?=$i?>" class="btn btn-sm btn-success img-shadow text-light edit" data-id="<?= $i?>" style="display: none">ubah</a>
                                         <h5 class="text-right" id="j<?=$i?>"></h5>
-                                    </div>
-
+                                    </div>                        
                                     <div id="select<?=$i?>">
-                                        <div class="container">
-                                            <div class="row justify-content-center">
-                                                <?php foreach ($kata as $k => $data) :?>
-                                                    <div class="radio-toolbar radio-shadow mr-3">
-                                                        <input type="radio" id="<?= $i.$k?>" name="<?= $i?>1" class="btn-primary" value="<?= $data?>">
-                                                        <label for="<?= $i.$k?>" id="container-content"><center><b><?= $data?></b></center></label>
-                                                    </div>
-                                                <?php endforeach;?>
+                                            <textarea name="jaw<?=$i?>" id="jaw<?=$i?>" class="form-control" readonly></textarea>
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <?php 
+                                                        rsort($kalimat['kata']);
+                                                        foreach ($kalimat['kata'] as $k => $data) :?>
+                                                            <div class="radio-toolbar mr-2">
+                                                                <a data-id="<?= $data?>|<?= $i?>" id="container-content" class="btn btn-md mt-2 mb-2 radio-shadow input-btn" style="background-color: rgb(238, 238, 238);"><b><?= $data?></b></a>
+                                                            </div>
+                                                    <?php endforeach;?>
+                                                </div>
                                             </div>
+                                            <a class="btn btn-block btn-sm btn-info img-shadow text-light cek" data-id="<?= $i?>|1">simpan</a>
+                                            <a class="btn btn-block btn-sm btn-danger img-shadow text-light hapus" data-id="<?= $i?>">hapus</a>
                                         </div>
-                                        <a class="btn btn-block btn-sm btn-info text-light cek" data-id="<?= $i?>|1">Pilih</a>
-                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -57,13 +61,15 @@
                 <?php endforeach;?>
             </div>
             <div class="row">
-                <!-- <form action="<?= base_url()?>latihan/add_latihan" method="post" id="latihan">
+                <!-- <form action="<?= base_url()?>materi/add_latihan" method="post" id="latihan">
                     <input type="hidden" name="materi" value="<?= $materi?>">
-                    <input type="hidden" name="latihan" value="<?= $title?>">
+                    <input type="hidden" name="tema" value="<?= $tema?>">
+                    <input type="hidden" name="table" value="latihan_hifdzi_1">
+                    <input type="hidden" name="latihan" value="Latihan 3">
                     <input type="hidden" name="redirect" value="<?= $redirect?>">
                 </form> -->
                 <div class="col-12 col-md-12 mb-3">
-                    <a id="simpanJawaban" data-id="<?= COUNT($mufrodat)?>" class="btn btn-block btn-primary text-light">Simpan</a>
+                    <a id="simpanJawaban" data-id="<?= COUNT($mufrodat)?>" class="btn btn-block btn-primary text-light">Periksa</a>
                 </div>
             </div>
         </div>
@@ -120,17 +126,27 @@
         })
     })
 
+    $(".input-btn").click(function(){
+        let data = $(this).data("id");
+        data = data.split("|");
+        let kata = " " + data[0];
+        let id = data[1];
+        
+        let html = $("#jaw"+id).val();
+
+        $("#jaw"+id).val(html + "" + kata);
+    })
+
     $(".cek").click(function(){
         let data = $(this).data("id");
         data = data.split("|");
         let id = data[0];
         let total = data[1];
+        html = $("#jaw"+id).val();
+        html = html.substring(1)
+        // html = html.replace(/_/g, " ");
 
-        let html = '';
-        for (let i = 0; i < total; i++) {
-            html += $("input[name='"+id+""+1+"']:checked").val();
-        }
-
+        // console.log(html)
         if(html === 'undefined'){
             html = '-';
         }
@@ -154,17 +170,31 @@
         }
     })
 
+    $(".hapus").click(function(){
+        let id = $(this).data("id");
+        let kalimat = $("#jaw"+id).val();
+        kalimat = kalimat.split(" ");
+
+        let data = "";
+        for (let i = 1; i < kalimat.length-1; i++) {
+            data += " " + kalimat[i];
+        }
+
+        $("#jaw"+id).val(data);
+    })
+
     $(".edit").click(function(){
         let id = $(this).data("id");
-        
+
         $("#btnEdit"+id).hide();
         $("#j"+id).html("");
         $("#jawaban"+id).val("");
         $("#select"+id).show();
     });
-
+    
     $("#font").change(function(){
         let font = $(this).val();
         $("[id='container-content']").css("font-size", font)
+        font = font.replace("px", "")
     })
 </script>

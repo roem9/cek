@@ -33,18 +33,30 @@
                     <a href="<?= base_url()?>ft_1/qowaid" class="btn btn-sm btn-success"><i class="fa fa-home mr-1"></i>Qowaid</a>
                 </div>
                 <div class="col-12 mb-3">
-                    <img src="<?= base_url()?>assets/img/qowaid_ft1/12.1.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
+                    <img src="<?= base_url()?>assets/img/qowaid_ft1/13.1.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
+                </div>
+                <div class="col-12 mb-3">
+                    <img src="<?= base_url()?>assets/img/qowaid_ft1/13.2.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
+                </div>
+                <div class="col-12 mb-3">
+                    <img src="<?= base_url()?>assets/img/qowaid_ft1/13.3.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
+                </div>
+                <div class="col-12 mb-3">
+                    <img src="<?= base_url()?>assets/img/qowaid_ft1/13.4.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
+                </div>
+                <div class="col-12 mb-3">
+                    <img src="<?= base_url()?>assets/img/qowaid_ft1/13.5.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
                 </div>
                 <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between">
                         <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Dhorof Madhruf')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left "></i></a>
-                        <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Isyarah Musyar Ilaih')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
+                        <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Idhafah')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="col-12">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-warning">Latihan</li>
-                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mausuf Sifat')?>&i=1" class="btn btn-sm btn-block btn-success btnMulai">Latihan 1</a></li>
+                        <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Isyarah Musyar Ilaih')?>&i=1" class="btn btn-sm btn-block btn-success btnMulai">Latihan 1</a></li>
                         <!-- <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mausuf Sifat')?>&i=2" class="btn btn-sm btn-block btn-success btnMulai">Latihan 2</a></li>
                         <li class="list-group-item"><a href="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Mausuf Sifat')?>&i=3" class="btn btn-sm btn-block btn-success btnMulai">Latihan 3</a></li> -->
                     </ul>

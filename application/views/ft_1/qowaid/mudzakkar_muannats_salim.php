@@ -35,6 +35,12 @@
                 <div class="col-12 mb-3">
                     <img src="<?= base_url()?>assets/img/qowaid_ft1/3.1.jpg" class="img-rounded img-fluid" alt="Cinque Terre">
                 </div>
+                <div class="col-12 mb-3">
+                    <div class="d-flex justify-content-between">
+                        <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Mufrod & Mutsanna')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left "></i></a>
+                        <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Jamak Taksir')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
                 <div class="col-12">
                     <ul class="list-group">
                         <li class="list-group-item list-group-item-warning">Latihan</li>
@@ -44,12 +50,6 @@
                         <li class="list-group-item"><a href="#daftarIsi" data-toggle="modal" data-id="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Jamak Mudzakkar & Muannats Salim')?>&i=4" class="btn btn-sm btn-block btn-success btnMulai">Latihan 4</a></li>
                         <li class="list-group-item"><a href="#daftarIsi" data-toggle="modal" data-id="<?= base_url()?>ft_1/qowaid?ln=<?= Md5('Jamak Mudzakkar & Muannats Salim')?>&i=5" class="btn btn-sm btn-block btn-success btnMulai">Latihan 5</a></li>
                     </ul>
-                </div>
-                <div class="col-12 mt-3">
-                    <div class="d-flex justify-content-between">
-                        <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Mufrod & Mutsanna')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left "></i></a>
-                        <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Jamak Taksir')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
-                    </div>
                 </div>
             </div>
         </div>

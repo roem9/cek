@@ -65,7 +65,7 @@
                     </ul>
                 </div> -->
                 
-                <div class="col-12 mt-3">
+                <div class="col-12 mb-3">
                     <div class="d-flex justify-content-between">
                         <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Fiil Amr')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-left "></i></a>
                         <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Jar Majrur')?>" class="btn btn-sm list-group-item-warning"><i class="fa fa-arrow-right"></i></a>
