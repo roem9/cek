@@ -71,6 +71,11 @@
                 $("#daftarIsiTitle").html(data.bab.title)
                 html = "";
 
+                html = `<li class="list-group-item d-flex justify-content-between">
+                    <span><strong>Latihan Pertema</strong></span>
+                    <span><a href="<?= base_url()?>ft_1/mufrodat?tema=`+data.link+`" class="btn btn-sm btn-info"><i class="fa fa-book text-light mr-1"></i> Mulai!</a></span>
+                    </li>`;
+
                 data = data.tema
                 data.forEach(function (data) {
                     html += `<li class="list-group-item d-flex justify-content-between" style="font-size: 20px">

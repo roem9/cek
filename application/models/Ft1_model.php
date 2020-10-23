@@ -1527,7 +1527,7 @@
 
                 $this->data_tema("5", "6", "7", "عَـقْـلٌ - حَاجِـبٌ", "9", "4"),
                 $this->data_tema("6", "7", "8", "هُـدْبٌ - ذِرَاعٌ", "9", "4"),
-                $this->data_tema("7", "8", "9", "بَ��طْـنٌ - كَـعْـبٌ", "9", "4"),
+                $this->data_tema("7", "8", "9", "بَطْـنٌ - كَـعْـبٌ", "9", "4"),
                 $this->data_tema("8", "9", "10", "سَاقٌّ - شَامَـةٌ", "9", "4"),
                 
                 $this->data_tema("9", "10", "11", "رُوْحٌ - كَـبِـدٌ", "9", "5"),
@@ -1680,59 +1680,66 @@
 
         public function bab(){
             $data = [
-                $this->data_bab("كَلِمَاتُ اْلإِسْتِفْهَامِ", "Kata Tanya", "1"),
-                $this->data_bab("ظُرُوْفُ الْمَكَانِ", "Keterangan Tempat", "2"),
-                $this->data_bab("ظُرُوْفُ الزَّمَانِ", "Keterangan Waktu", "3"),
-                $this->data_bab("أَعْضَاءُ الْبَدَنِ", "Anggota Badan", "4"),
-                $this->data_bab("أَعْضَاءٌ دَاخِلِيَّةٌ", "Anggota Dalam", "5"),
-                $this->data_bab("الأَفْعَالُ عَنْ أَعْضَاءِ الْبَدَنِ", "Kata kerja tentang Anggota Badan", "6"),
-                $this->data_bab("الأُسْرَةُ", "Keluarga", "7"),
-                $this->data_bab("الأَفْعَالُ عَنِ اْلأُسْرَةِ", "Kata kerja tentang keluarga", "8"),
-                $this->data_bab("الطَّبِيْعَةُ الْبَشَرِيَّةُ", "Sifat Manusia", "9"),
-                $this->data_bab("آثَاثُ اْلبَيْتِ", "Perabotan Rumah", "10"),
-                
-                $this->data_bab("الأَفْعَالُ عَنِ اْلبَيْتِ", "Pekerjaan tentang rumah", "11"),
-                $this->data_bab("الأَلْوَانُ", "Warna-warna", "12"),
-                $this->data_bab("الصِّفَاتُ", "Sifat-sifat", "13"),
-                $this->data_bab("مَلَابِسُ وَ جَوَاهِرُ", "Pakaian dan Perhiasan", "14"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْمَلَابِسِ", "Kata kerja tentang Pakaian", "15"),
-                $this->data_bab("غُرْفَةُ النَّوْمِ", "Kamar tidur", "16"),
-                $this->data_bab("الأَفْعَالُ عَنْ غُرْفَةِ النَّوْمِ", "Kata kerja ttg Kamar Tidur", "17"),
-                $this->data_bab("الْمَطْبَخُ", "Dapur", "18"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْمَطْبَخِ", "Kata kerja ttg Dapur", "19"),
-                $this->data_bab("الطُّعُوْمُ", "Rasa-rasa", "20"),
-
-                $this->data_bab("الحَمَّامُ", "Kamar Mandi", "21"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْحَمَّامِ", "Kata kerja ttg Kamar Mandi", "22"),
-                $this->data_bab("المَدْرَسَةُ", "Sekolah", "23"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْمَدْرَسَةِ", "Kata kerja ttg Sekolah", "24"),
-                $this->data_bab("الْمَرْكُوْبَاتُ", "Kendaraan", "25"),
-                $this->data_bab("الأَفْعَالُ  عَنِ الْمَرْكُوْبَاتِ", "Kata kerja ttg Kendaraan", "26"),
-                $this->data_bab("الْمُسْتَشْفَى", "Rumah sakit", "27"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْمُسْتَشْفَى", "Kata kerja ttg Rumah sakit", "28"),
-                $this->data_bab("أَسْمَاءُ الْحَيَوَانَاتِ", "Nama-nama hewan", "29"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْحَيَوَانِ", "Kata kerja ttg Hewan", "30"),
-
-                $this->data_bab("أَسْمَاءُ اْلفَوَاكِهِ", "Nama-nama buah", "31"),
-                $this->data_bab("الأَفْعَالُ عَنِ اْلفَوَاكِهِ", "Kata kerja ttg Buah-buahan", "32"),
-                $this->data_bab("أَسْمَاءُ الْمَكَانِ", "Nama-nama tempat", "33"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْمَكَانِ", "Kata kerja ttg Tempat", "34"),
-                $this->data_bab("العَالَمُ", "Dunia", "35"),
-                $this->data_bab("الأَفْعَالُ عَنِ اْلعَالَمِ", "Kata kerja ttg Dunia", "36"),
-                $this->data_bab("الْمِهْنَةُ", "Profesi", "37"),
-                $this->data_bab("الأَفْعَالُ عَنِ الْمِهْنَةِ", "Kata kerja ttg Profesi", "38"),
-                $this->data_bab("الفُصُوْلُ", "Musim-musim", "39"),
-                $this->data_bab("جُمُوْعُ التَّكْسِيْرِ", "Jamak Taksir", "40"),
+                $this->data_bab("كَلِمَاتُ اْلإِسْتِفْهَامِ", "Kata Tanya", "", "1", "2"),
+                $this->data_bab("ظُرُوْفُ الْمَكَانِ", "Keterangan Tempat", "1", "2", "3"),
+                $this->data_bab("ظُرُوْفُ الزَّمَانِ", "Keterangan Waktu", "2", "3", "4"),
+                $this->data_bab("أَعْضَاءُ الْبَدَنِ", "Anggota Badan", "3", "4", "5"),
+                $this->data_bab("أَعْضَاءٌ دَاخِلِيَّةٌ", "Anggota Dalam", "4", "5", "6"),
+                $this->data_bab("الأَفْعَالُ عَنْ أَعْضَاءِ الْبَدَنِ", "Kata kerja tentang Anggota Badan", "5", "6", "7"),
+                $this->data_bab("الأُسْرَةُ", "Keluarga", "6", "7", "8"),
+                $this->data_bab("الأَفْعَالُ عَنِ اْلأُسْرَةِ", "Kata kerja tentang keluarga", "7", "8", "9"),
+                $this->data_bab("الطَّبِيْعَةُ الْبَشَرِيَّةُ", "Sifat Manusia", "8", "9", "10"),
+                $this->data_bab("آثَاثُ اْلبَيْتِ", "Perabotan Rumah", "9", "10", "11"),
+                $this->data_bab("الأَفْعَالُ عَنِ اْلبَيْتِ", "Pekerjaan tentang rumah", "10", "11", "12"),
+                $this->data_bab("الأَلْوَانُ", "Warna-warna", "11", "12", "13"),
+                $this->data_bab("الصِّفَاتُ", "Sifat-sifat", "12", "13", "14"),
+                $this->data_bab("مَلَابِسُ وَ جَوَاهِرُ", "Pakaian dan Perhiasan", "13", "14", "15"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَلَابِسِ", "Kata kerja tentang Pakaian", "14", "15", "16"),
+                $this->data_bab("غُرْفَةُ النَّوْمِ", "Kamar tidur", "15", "16", "17"),
+                $this->data_bab("الأَفْعَالُ عَنْ غُرْفَةِ النَّوْمِ", "Kata kerja ttg Kamar Tidur", "16", "17", "18"),
+                $this->data_bab("الْمَطْبَخُ", "Dapur", "17", "18", "19"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَطْبَخِ", "Kata kerja ttg Dapur", "18", "19", "20"),
+                $this->data_bab("الطُّعُوْمُ", "Rasa-rasa", "19", "20", "21"),
+                $this->data_bab("الحَمَّامُ", "Kamar Mandi", "20", "21", "22"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْحَمَّامِ", "Kata kerja ttg Kamar Mandi", "21", "22", "23"),
+                $this->data_bab("المَدْرَسَةُ", "Sekolah", "22", "23", "24"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَدْرَسَةِ", "Kata kerja ttg Sekolah", "23", "24", "25"),
+                $this->data_bab("الْمَرْكُوْبَاتُ", "Kendaraan", "24", "25", "26"),
+                $this->data_bab("الأَفْعَالُ  عَنِ الْمَرْكُوْبَاتِ", "Kata kerja ttg Kendaraan", "25", "26", "27"),
+                $this->data_bab("الْمُسْتَشْفَى", "Rumah sakit", "26", "27", "28"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمُسْتَشْفَى", "Kata kerja ttg Rumah sakit", "27", "28", "29"),
+                $this->data_bab("أَسْمَاءُ الْحَيَوَانَاتِ", "Nama-nama hewan", "28", "29", "30"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْحَيَوَانِ", "Kata kerja ttg Hewan", "29", "30", "31"),
+                $this->data_bab("أَسْمَاءُ اْلفَوَاكِهِ", "Nama-nama buah", "30", "31", "32"),
+                $this->data_bab("الأَفْعَالُ عَنِ اْلفَوَاكِهِ", "Kata kerja ttg Buah-buahan", "31", "32", "33"),
+                $this->data_bab("أَسْمَاءُ الْمَكَانِ", "Nama-nama tempat", "32", "33", "34"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمَكَانِ", "Kata kerja ttg Tempat", "33", "34", "35"),
+                $this->data_bab("العَالَمُ", "Dunia", "34", "35", "36"),
+                $this->data_bab("الأَفْعَالُ عَنِ اْلعَالَمِ", "Kata kerja ttg Dunia", "35", "36", "37"),
+                $this->data_bab("الْمِهْنَةُ", "Profesi", "36", "37", "38"),
+                $this->data_bab("الأَفْعَالُ عَنِ الْمِهْنَةِ", "Kata kerja ttg Profesi", "37", "38", "39"),
+                $this->data_bab("الفُصُوْلُ", "Musim-musim", "38", "39", "40"),
+                $this->data_bab("جُمُوْعُ التَّكْسِيْرِ", "Jamak Taksir", "39", "40", ""),
             ];
 
             return $data;
         }
 
-        public function data_bab($title, $title_arti, $bab){
+        public function data_bab($title, $title_arti, $back = "",$bab, $next = ""){
+            if($back != ""){
+                $back = "ft_1/mufrodat"."?tema=".MD5($back);
+            }
+
+            if($next != ""){
+                $next = "ft_1/mufrodat"."?tema=".MD5($next);
+            }
+            
             $data = [
                 "title" => $title,
                 "title_arti" => $title_arti,
-                "bab" => $bab
+                "bab" => $bab,
+                "back" => $back,
+                "next" => $next,
             ];
 
             return $data;

@@ -76,6 +76,37 @@ class Ft_2 extends CI_CONTROLLER{
             $this->load->view("ft_2/mufrodat/menu-mufrodat", $data);
             $this->load->view("templates/footer-user", $data);
 
+        } else if(!empty($_GET['tema'])){
+            
+            $sub = [];
+            foreach ($materi as $i => $materi) {
+                if(MD5($materi['bab']) == $_GET['tema']){
+                    $sub[] = $materi['tema'];
+                }
+            }
+
+            foreach ($kata as $i => $kata) {
+                if(in_array($kata['tema'], $sub)){
+                    $data['mufrodat'][$i] = $kata;
+                }
+            }
+
+            foreach ($bab as $bab) {
+                if(MD5($bab['bab']) == $_GET['tema']){
+                    $sub = $bab;
+                }
+            }
+            
+            $data['tema'] = "Full Time 2";
+            $data['materi'] = $sub['bab'];
+            $data['title'] = $sub['title'];
+            $data['title_arti'] = $sub['title_arti'];
+            $data['back'] = $sub['back'];
+            $data['next'] = $sub['next'];
+            
+            $this->load->view("templates/header-user", $data);
+            $this->load->view("ft_2/mufrodat/menu-mufrodat-tema", $data);
+            $this->load->view("templates/footer-user", $data);
         } elseif(!empty($_GET['latihan'])) {
             if($_POST['data']){
                 $urut = $_GET['i'];
@@ -104,6 +135,64 @@ class Ft_2 extends CI_CONTROLLER{
             $data['tema'] = "Level 1";
             $data['table'] = "latihan_ft_1";
             $data['redirect'] = "ft_2/mufrodat?id=".MD5($tema['tema']);
+            
+            // view
+                foreach ($data['mufrodat'] as $i => $kata) {
+                    if($urut == 1){
+                        $data['title'] = "Latihan 1";
+                        $data['kata'][$i]['arab'] = $kata['kata_arab'];
+                        $data['kata'][$i]['arti'] = $kata['arti'];
+                    }
+                    elseif($urut == 2){
+                        $data['title'] = "Latihan 2";
+                        $data['kata'][$i] = $kata['arti'];
+                    }
+                    else if($urut == 3){
+                        $data['title'] = "Latihan 3";
+                        $data['kata'][$i] = $kata['arti'];
+                    }
+                }
+                shuffle($data['kata']);
+                shuffle($data['mufrodat']);
+                $this->load->view("templates/header-user", $data);
+                if($urut == 1){
+                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-1", $data);
+                } else if($urut == 2){
+                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-2", $data);
+                } else if($urut == 3){
+                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-3", $data);
+                }
+                
+                $this->load->view("templates/footer-user", $data);
+            // view
+
+        } elseif(!empty($_GET['latihan_tema'])) {
+            
+            $urut = $_GET['i'];
+            
+            $sub = [];
+            foreach ($materi as $i => $materi) {
+                if(MD5($materi['bab']) == $_GET['latihan_tema']){
+                    $sub[] = $materi['tema'];
+                }
+            }
+
+            foreach ($kata as $i => $kata) {
+                if(in_array($kata['tema'], $sub)){
+                    if($urut == 1){
+                        // if($kata['status'] == "on"){
+                            $data['mufrodat'][$i] = $kata;
+                        // }
+                    } else {
+                        $data['mufrodat'][$i] = $kata;
+                    }
+                }
+            }
+            
+            $data['materi'] = "tema";
+            $data['tema'] = "Level 1";
+            $data['table'] = "latihan_ft_1";
+            $data['redirect'] = "ft_2/mufrodat?tema=" . $_GET['latihan_tema'];
             
             // view
                 foreach ($data['mufrodat'] as $i => $kata) {
@@ -264,12 +353,14 @@ class Ft_2 extends CI_CONTROLLER{
             foreach ($bab as $bab) {
                 if($bab['bab'] == $id){
                     $data['bab'] = $bab;
+                    $data['link'] = MD5($bab['bab']);
                 }
             }
 
             echo json_encode($data);
             // var_dump($cek);
         }
+        
     // get
 
     // add

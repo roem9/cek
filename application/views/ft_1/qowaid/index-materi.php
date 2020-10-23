@@ -175,7 +175,61 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">إِشَارَةُ مُشَارٌ إِلَيْهِ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Isyarah Musyar Ilaih')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">إِضَافَةٌ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Idhafah')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">أَسْمَاءُ الْمَوْصُوْلِ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Mausul')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">اِسْمُ الْمَعْرِفَةِ وَ النَّكِرَةِ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Isim Nakirah & Marifat')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card rounded-lg border-primary">
+                        <div class="card-header d-flex justify-content-center list-group-item-primary">
+                            <span class="text-dark arab">الْجُمْلَةُ<span>
+                        </div>
+                        <div class="card-body">
+                            <a href="<?= base_url()?>ft_1/qowaid?id=<?= MD5('Jumlah')?>" class="d-flex justify-content-center btn btn-block btn-sm btn-primary"><span><i class="fa fa-book mr-1"></i> Mulai</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

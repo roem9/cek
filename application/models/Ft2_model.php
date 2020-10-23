@@ -1652,33 +1652,35 @@
 
         public function bab(){
             $data = [
-                $this->data_bab("اَلْعَالَمُ", "ALAM SEMESTA", "1"),
-                $this->data_bab("اَلْمَأْكُوْلَاتُ", "MAKANAN", "2"),
-                $this->data_bab("اَلْمَدْرَسَةُ", "SEKOLAH", "3"),
-                $this->data_bab("اَلرِّيَاضَةُ", "OLAHRAGA", "4"),
-                $this->data_bab("مَكْتَبُ الْبَرِيْدِ", "KANTOR POS", "5"),
-                $this->data_bab("تِجَارَةٌ", "PERDAGANGAN", "6"),
-                $this->data_bab("أَجْزَاءُ الْمَرْكُوْبَاتِ", "BAGIAN-BAGIAN KENDARAAN", "7"),
-                $this->data_bab("اَلْأَفْعَالُ الْمُتَعَلِّقَةُ بِالْمُحَاضَرَةِ", "Kata Kerja Yang Berkaitan Dengan Ceramah", "8"),
-                $this->data_bab("اَلْأَفْعَالُ الْمُتَعَلِّقَةُ بِالتِّجَارَةِ", "Kata Kerja Yang Berkaitan Dengan Perdagangan", "9"),
-                $this->data_bab("اَلْأَفْعَالُ الْمُتَعَلِّقَةُ بِالذُّنُوْبِ", "Kata Kerja Yang Berkaitan Dengan Dosa", "10"),
-                $this->data_bab("اَلْمُتَرَادِفَاتُ مِنَ الْأَسْمَاءِ", "PERSAMAAN KATA DARI ISIM-ISIM", "11"),
-                $this->data_bab("اَلْمُتَرَادِفَاتُ مِنَ الصِّفَاتِ", "PERSAMAAN KATA DARI SIFAT - SIFAT", "12"),
-                $this->data_bab("اَلْمُتَرَادِفَاتُ مِنَ الْأَفْعَالِ", "PERSAMAAN KATA DARI FI’IL-FI’IL", "13"),
-                $this->data_bab("اَلْأَضْدَادُ مِنَ الصِّفَاتِ", "LAWAN KATA DARI SIFAT – SIFAT", "14"),
-                $this->data_bab("اَلْأَضْدَادُ مِنَ الأَفْعَالِ", "LAWAN KATA DARI FI’IL – FI’IL", "15"),
-                $this->data_bab("اَلْأَضْدَادُ مِنَ الأَسْمَاءِ وَالصِّفَات", "LAWAN KATA DARI ISIM DAN SIFAT - SIFAT", "16"),
-                $this->data_bab("جمع التكسي", "Jamak Taksir", "17"),
+                $this->data_bab("اَلْعَالَمُ", "ALAM SEMESTA", "", "1", "2"),
+                $this->data_bab("اَلْمَأْكُوْلَاتُ", "MAKANAN", "1", "2", "3"),
+                $this->data_bab("اَلْمَدْرَسَةُ", "SEKOLAH", "2", "3", "4"),
+                $this->data_bab("اَلرِّيَاضَةُ", "OLAHRAGA", "3", "4", "5"),
+                $this->data_bab("مَكْتَبُ الْبَرِيْدِ", "KANTOR POS", "4", "5", "6"),
+                $this->data_bab("تِجَارَةٌ", "PERDAGANGAN", "5", "6", "7"),
+                $this->data_bab("أَجْزَاءُ الْمَرْكُوْبَاتِ", "BAGIAN-BAGIAN KENDARAAN", "6", "7", "8"),
+                $this->data_bab("اَلْأَفْعَالُ الْمُتَعَلِّقَةُ بِالْمُحَاضَرَةِ", "Kata Kerja Yang Berkaitan Dengan Ceramah", "7", "8", "9"),
+                $this->data_bab("اَلْأَفْعَالُ الْمُتَعَلِّقَةُ بِالتِّجَارَةِ", "Kata Kerja Yang Berkaitan Dengan Perdagangan", "8", "9", "10"),
+                $this->data_bab("اَلْأَفْعَالُ الْمُتَعَلِّقَةُ بِالذُّنُوْبِ", "Kata Kerja Yang Berkaitan Dengan Dosa", "9", "10", "11"),
+                $this->data_bab("اَلْمُتَرَادِفَاتُ مِنَ الْأَسْمَاءِ", "PERSAMAAN KATA DARI ISIM-ISIM", "10", "11", "12"),
+                $this->data_bab("اَلْمُتَرَادِفَاتُ مِنَ الصِّفَاتِ", "PERSAMAAN KATA DARI SIFAT - SIFAT", "11", "12", "13"),
+                $this->data_bab("اَلْمُتَرَادِفَاتُ مِنَ الْأَفْعَالِ", "PERSAMAAN KATA DARI FI’IL-FI’IL", "12", "13", "14"),
+                $this->data_bab("اَلْأَضْدَادُ مِنَ الصِّفَاتِ", "LAWAN KATA DARI SIFAT – SIFAT", "13", "14", "15"),
+                $this->data_bab("اَلْأَضْدَادُ مِنَ الأَفْعَالِ", "LAWAN KATA DARI FI’IL – FI’IL", "14", "15", "16"),
+                $this->data_bab("اَلْأَضْدَادُ مِنَ الأَسْمَاءِ وَالصِّفَات", "LAWAN KATA DARI ISIM DAN SIFAT - SIFAT", "15", "16", "17"),
+                $this->data_bab("جمع التكسي", "Jamak Taksir", "16", "17", ""),
             ];
 
             return $data;
         }
 
-        public function data_bab($title, $title_arti, $bab){
+        public function data_bab($title, $title_arti, $back, $bab, $next){
             $data = [
                 "title" => $title,
                 "title_arti" => $title_arti,
-                "bab" => $bab
+                "bab" => $bab,
+                "back" => $back,
+                "next" => $next
             ];
 
             return $data;
