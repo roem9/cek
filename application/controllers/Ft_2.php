@@ -67,13 +67,14 @@ class Ft_2 extends CI_CONTROLLER{
             $data['back'] = $tema['back'];
             $data['next'] = $tema['next'];
 
+            $data['level'] = "ft_2";
             $data['tema'] = "Full Time 2";
             $data['materi'] = $tema['tema'];
             $data['title'] = $tema['title_arab'];
             // $data['latihan'] = $this->latihan_mufrodat("latihan_ft_1", $id, MD5($data['materi']));
             
             $this->load->view("templates/header-user", $data);
-            $this->load->view("ft_2/mufrodat/menu-mufrodat", $data);
+            $this->load->view("comp/mufrodat/menu-mufrodat", $data);
             $this->load->view("templates/footer-user", $data);
 
         } else if(!empty($_GET['tema'])){
@@ -156,11 +157,11 @@ class Ft_2 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($urut == 1){
-                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-1", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-1", $data);
                 } else if($urut == 2){
-                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-2", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-2", $data);
                 } else if($urut == 3){
-                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-3", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-3", $data);
                 }
                 
                 $this->load->view("templates/footer-user", $data);
@@ -214,11 +215,11 @@ class Ft_2 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($urut == 1){
-                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-1", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-1", $data);
                 } else if($urut == 2){
-                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-2", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-2", $data);
                 } else if($urut == 3){
-                    $this->load->view("ft_2/mufrodat/latihan-mufrodat-3", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-3", $data);
                 }
                 
                 $this->load->view("templates/footer-user", $data);

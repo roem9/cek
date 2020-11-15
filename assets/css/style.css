@@ -79,11 +79,12 @@ textarea {
 }
 
 .radio-toolbar input[type="radio"]:focus + label {
-    border: 2px dashed #444;
+    /* border: 2px dashed #444; */
 }
 
 .radio-toolbar input[type="radio"]:checked + label {
-    background-color: #bfb;
+    background-color: #979393;
+    /* background-color: #bfb; */
     border-color: #4c4;
 }
 

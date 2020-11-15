@@ -67,13 +67,14 @@ class Ft_1 extends CI_CONTROLLER{
             $data['back'] = $tema['back'];
             $data['next'] = $tema['next'];
 
+            $data['level'] = "ft_1";
             $data['tema'] = "Full Time 1";
             $data['materi'] = $tema['tema'];
             $data['title'] = $tema['title_arab'];
             $data['latihan'] = $this->latihan_mufrodat("latihan_ft_1", $id, MD5($data['materi']));
             
             $this->load->view("templates/header-user", $data);
-            $this->load->view("ft_1/menu-mufrodat", $data);
+            $this->load->view("comp/mufrodat/menu-mufrodat", $data);
             $this->load->view("templates/footer-user", $data);
 
         } else if(!empty($_GET['tema'])){
@@ -156,11 +157,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($urut == 1){
-                    $this->load->view("ft_1/latihan-mufrodat-1", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-1", $data);
                 } else if($urut == 2){
-                    $this->load->view("ft_1/latihan-mufrodat-2", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-2", $data);
                 } else if($urut == 3){
-                    $this->load->view("ft_1/latihan-mufrodat-3", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-3", $data);
                 }
                 
                 $this->load->view("templates/footer-user", $data);
@@ -214,11 +215,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($urut == 1){
-                    $this->load->view("ft_1/latihan-mufrodat-1", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-1", $data);
                 } else if($urut == 2){
-                    $this->load->view("ft_1/latihan-mufrodat-2", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-2", $data);
                 } else if($urut == 3){
-                    $this->load->view("ft_1/latihan-mufrodat-3", $data);
+                    $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-3", $data);
                 }
                 
                 $this->load->view("templates/footer-user", $data);
@@ -387,11 +388,13 @@ class Ft_1 extends CI_CONTROLLER{
             }
         } else if(!empty($_GET['ln'])){
             if($_GET['ln'] == MD5("Mudzakkar & Muannats")){
-                $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol simpan";
+                $data['pesan'] = "Tentukan jenis kata benda dari kata-kata berikut ini";
                 $urut = $_GET['i'];
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->mudzakkar_muannats();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Mudzakkar & Muannats");
+                $data['soal'] = "arab";
+                $data['spasi'] = "off";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -403,7 +406,7 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['kata'] = ["مُذَكَّرٌ", "مُؤَنَّثٌ"];
                 
                 $this->load->view("templates/header-user", $data);
-                $this->load->view("ft_1/qowaid/latihan/latihan-muannats-mudzakkar", $data);
+                $this->load->view("comp/latihan/latihan-pg", $data);
                 $this->load->view("templates/footer-user", $data);
             } else if($_GET['ln'] == MD5("Mufrod & Mutsanna")){
                 $urut = $_GET['i'];
@@ -421,11 +424,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($latihan == 1){
-                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol simpan";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
+                    $data['pesan'] = "Pilihlah kata yang sesuai dengan perubahan kata-kata berikut sesuai dengan perintah di dalam kurung";
+                    $this->load->view("comp/latihan/latihan-pilihan", $data);
                 } else{
-                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol simpan";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                    $data['pesan'] = "Isilah form dengan kata yang sesuai dengan perubahan kata-kata berikut sesuai dengan perintah di dalam kurung";
+                    $this->load->view("comp/latihan/latihan-ketik", $data);
                 }
 
                 $this->load->view("templates/footer-user", $data);
@@ -446,11 +449,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($latihan == 1){
-                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol simpan";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
-                } else {
-                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol simpan";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                    $data['pesan'] = "Pilihlah kata yang sesuai dengan perubahan kata-kata berikut sesuai dengan perintah di dalam kurung";
+                    $this->load->view("comp/latihan/latihan-pilihan", $data);
+                } else{
+                    $data['pesan'] = "Isilah form dengan kata yang sesuai dengan perubahan kata-kata berikut sesuai dengan perintah di dalam kurung";
+                    $this->load->view("comp/latihan/latihan-ketik", $data);
                 }
 
                 $this->load->view("templates/footer-user", $data);
@@ -465,29 +468,33 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['redirect'] = "ft_1/qowaid?id=".MD5("Dhomir Munfashil");
                 
                 // view
-                    foreach ($data['mufrodat'] as $i => $kata) {
-                        if($urut == 1){
-                            $data['title'] = "Latihan 1";
-                            $data['kata'][$i] = $kata['kata_arab'];
-                        }
-                        elseif($urut == 2){
-                            $data['title'] = "Latihan 2";
-                            $data['kata'][$i] = $kata['arti'];
-                        }
-                        else if($urut == 3){
-                            $data['title'] = "Latihan 3";
-                            $data['kata'][$i] = $kata['arti'];
-                        }
+                foreach ($data['mufrodat'] as $i => $kata) {
+                    if($urut == 1){
+                        $data['title'] = "Latihan 1";
+                        $data['kata'][$i]['arab'] = $kata['kata_arab'];
+                        $data['kata'][$i]['arti'] = $kata['arti'];
                     }
+                    elseif($urut == 2){
+                        $data['title'] = "Latihan 2";
+                        $data['kata'][$i] = $kata['arti'];
+                    }
+                    else if($urut == 3){
+                        $data['title'] = "Latihan 3";
+                        $data['kata'][$i] = $kata['arti'];
+                    }
+                }
                     shuffle($data['kata']);
                     shuffle($data['mufrodat']);
                     $this->load->view("templates/header-user", $data);
                     if($urut == 1){
-                        $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-1", $data);
+                        $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-1", $data);
+                        // $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-1", $data);
                     } else if($urut == 2){
-                        $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-2", $data);
+                        $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-2", $data);
+                        // $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-2", $data);
                     } else if($urut == 3){
-                        $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-3", $data);
+                        $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-3", $data);
+                        // $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-3", $data);
                     }
                     $this->load->view("templates/footer-user", $data);
                 // view
@@ -505,7 +512,8 @@ class Ft_1 extends CI_CONTROLLER{
                     foreach ($data['mufrodat'] as $i => $kata) {
                         if($urut == 1){
                             $data['title'] = "Latihan 1";
-                            $data['kata'][$i] = $kata['kata_arab'];
+                            $data['kata'][$i]['arab'] = $kata['kata_arab'];
+                            $data['kata'][$i]['arti'] = $kata['arti'];
                         }
                         elseif($urut == 2){
                             $data['title'] = "Latihan 2";
@@ -518,13 +526,15 @@ class Ft_1 extends CI_CONTROLLER{
                     }
                     shuffle($data['kata']);
                     shuffle($data['mufrodat']);
-                    $this->load->view("templates/header-user", $data);
                     if($urut == 1){
-                        $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-1", $data);
+                        $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-1", $data);
+                        // $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-1", $data);
                     } else if($urut == 2){
-                        $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-2", $data);
+                        $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-2", $data);
+                        // $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-2", $data);
                     } else if($urut == 3){
-                        $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-3", $data);
+                        $this->load->view("comp/latihan-mufrodat/latihan-mufrodat-3", $data);
+                        // $this->load->view("ft_1/qowaid/latihan/latihan-hafalan-3", $data);
                     }
                     $this->load->view("templates/footer-user", $data);
                 // view
@@ -534,6 +544,8 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->dhomir_muttashil_milki();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Dhomir Muttashil");
+                $data['soal'] = "arab";
+                $data['spasi'] = "off";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -547,11 +559,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($latihan == 1){
-                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
-                } else {
-                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-pilihan", $data);
+                } else{
+                    $data['pesan'] = "Isilah form dengan jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-ketik", $data);
                 }
 
                 $this->load->view("templates/footer-user", $data);
@@ -562,6 +574,8 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->dhomir_muttashil_maful();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Dhomir Muttashil");
+                $data['soal'] = "arab";
+                $data['spasi'] = "off";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -575,21 +589,22 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($latihan == 1){
-                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
-                } else {
-                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-pilihan", $data);
+                } else{
+                    $data['pesan'] = "Isilah form dengan jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-ketik", $data);
                 }
 
-                $this->load->view("templates/footer-user", $data);
-            
+                $this->load->view("templates/footer-user", $data);        
             } else if($_GET['ln'] == MD5("Fiil Madhi")){
                 $urut = $_GET['i'];
                 $latihan = $_GET['j'];
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->fiil_madhi();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Fiil Madhi");
+                $data['soal'] = "arab";
+                $data['spasi'] = "off";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -603,11 +618,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($latihan == 1){
-                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
-                } else {
-                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-pilihan", $data);
+                } else{
+                    $data['pesan'] = "Isilah form dengan jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-ketik", $data);
                 }
 
                 $this->load->view("templates/footer-user", $data);
@@ -618,6 +633,8 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->fiil_mudhori();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Fiil Mudhori");
+                $data['soal'] = "arab";
+                $data['spasi'] = "off";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -631,11 +648,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($latihan == 1){
-                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
-                } else {
-                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-pilihan", $data);
+                } else{
+                    $data['pesan'] = "Isilah form dengan jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-ketik", $data);
                 }
 
                 $this->load->view("templates/footer-user", $data);
@@ -646,6 +663,8 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->fiil_amr();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Fiil Amr");
+                $data['soal'] = "arab";
+                $data['spasi'] = "off";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -659,11 +678,11 @@ class Ft_1 extends CI_CONTROLLER{
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
                 if($latihan == 1){
-                    $data['pesan'] = "Pilihlah jawaban yang sesuai kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-1", $data);
-                } else {
-                    $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
-                    $this->load->view("ft_1/qowaid/latihan/latihan-mufrod-mutsanna-jamak-2", $data);
+                    $data['pesan'] = "Pilihlah jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-pilihan", $data);
+                } else{
+                    $data['pesan'] = "Isilah form dengan jawaban yang sesuai dengan soal";
+                    $this->load->view("comp/latihan/latihan-ketik", $data);
                 }
 
                 $this->load->view("templates/footer-user", $data);
@@ -672,27 +691,28 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->jar_majrur();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Jar Majrur");
+                $data['soal'] = "indo";
+                $data['spasi'] = "on";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
                         $data['mufrodat'][$i] = $kata;
                     }
                 }      
-                
-                // var_dump($data['mufrodat']);
-                // exit();
 
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
-                $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
-                $this->load->view("ft_1/qowaid/latihan/latihan-syibhul-jumlah-1", $data);
-
+                $data['pesan'] = "Ketiklah terjemahan bahasa Arab dari kata-kata berikut ini";
+                // $this->load->view("ft_1/qowaid/latihan/latihan-syibhul-jumlah-1", $data);
+                $this->load->view("comp/latihan/latihan-ketik", $data);
                 $this->load->view("templates/footer-user", $data);
             } else if($_GET['ln'] == MD5("Dhorof Madhruf")){
                 $urut = $_GET['i'];
                 $data['title'] = "Latihan " . $urut;
                 $kata = $this->Ft1_model->dhorof_madhruf();
                 $data['redirect'] = "ft_1/qowaid/?id=" . MD5("Dhorof Madhruf");
+                $data['soal'] = "indo";
+                $data['spasi'] = "on";
     
                 foreach ($kata as $i => $kata) {
                     if($kata['latihan'] == $urut){
@@ -705,8 +725,9 @@ class Ft_1 extends CI_CONTROLLER{
 
                 shuffle($data['mufrodat']);
                 $this->load->view("templates/header-user", $data);
-                $data['pesan'] = "Isilah form dengan jawaban yang tepat dengan menekan tombol di bawah form kemudian tekan tombol <b>simpan</b>";
-                $this->load->view("ft_1/qowaid/latihan/latihan-syibhul-jumlah-1", $data);
+                $data['pesan'] = "Ketiklah terjemahan bahasa Arab dari kata-kata berikut ini";
+                // $this->load->view("ft_1/qowaid/latihan/latihan-syibhul-jumlah-1", $data);
+                $this->load->view("comp/latihan/latihan-ketik", $data);
 
                 $this->load->view("templates/footer-user", $data);
             } else if($_GET['ln'] == MD5("Mausuf Sifat")){
@@ -810,7 +831,7 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['kata'] = ["النَّكِرَةُ", "الْمَعْرِفَةُ"];
                 
                 $this->load->view("templates/header-user", $data);
-                $this->load->view("ft_1/qowaid/latihan/latihan-muannats-mudzakkar", $data);
+                $this->load->view("comp/latihan/latihan-pg", $data);
                 $this->load->view("templates/footer-user", $data);
             } else if($_GET['ln'] == MD5("Jumlah")){
                 $data['pesan'] = "Pilihlah jenis dari kalimat berikut kemudian tekan tombol simpan";
@@ -829,7 +850,7 @@ class Ft_1 extends CI_CONTROLLER{
                 $data['kata'] = ["جُمْلَةٌ اِسْمِيَّةٌ", "جُمْلَةٌ فِعْلِيَّةٌ"];
                 
                 $this->load->view("templates/header-user", $data);
-                $this->load->view("ft_1/qowaid/latihan/latihan-muannats-mudzakkar", $data);
+                $this->load->view("comp/latihan/latihan-pg", $data);
                 $this->load->view("templates/footer-user", $data);
             }
         } else {
